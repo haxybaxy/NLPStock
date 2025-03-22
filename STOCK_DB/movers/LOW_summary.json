@@ -1,9 +1,0 @@
-{
-  "symbol": "LOW",
-  "exchange": "NASDAQ",
-  "type": "gainer",
-  "period": "day",
-  "summary": "There are no news currently affecting the stock price, fluctuations might be due to market conditions.",
-  "daily_change_percentage": 0.6023300945220287,
-  "date_generated": "2025-03-07T11:00:41.848333+00:00"
-}

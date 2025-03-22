@@ -1,9 +1,0 @@
-{
-  "symbol": "TGT",
-  "exchange": "NASDAQ",
-  "type": "loser",
-  "period": "day",
-  "summary": "There are no news currently affecting the stock price, fluctuations might be due to market conditions.",
-  "daily_change_percentage": -2.332124861016723,
-  "date_generated": "2025-03-07T11:03:26.727209+00:00"
-}

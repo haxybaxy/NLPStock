@@ -1,9 +1,0 @@
-{
-  "symbol": "ADP",
-  "exchange": "NASDAQ",
-  "type": "loser",
-  "period": "day",
-  "summary": "There are no news currently affecting the stock price, fluctuations might be due to market conditions.",
-  "daily_change_percentage": -0.8511836318540773,
-  "date_generated": "2025-03-07T11:04:36.089916+00:00"
-}

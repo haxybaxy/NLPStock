@@ -1,9 +1,0 @@
-{
-  "symbol": "NVS",
-  "exchange": "NASDAQ",
-  "type": "loser",
-  "period": "day",
-  "summary": "There are no news currently affecting the stock price, fluctuations might be due to market conditions.",
-  "daily_change_percentage": -4.898273568691191,
-  "date_generated": "2025-03-07T11:03:17.707327+00:00"
-}
