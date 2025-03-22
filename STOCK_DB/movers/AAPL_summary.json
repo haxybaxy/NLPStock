@@ -1,0 +1,8 @@
+{
+  "symbol": "AAPL",
+  "exchange": "NASDAQ",
+  "type": "loser",
+  "summary": "Based on the provided news summary, GraniteShares, an ETF issuer, plans to amend the names and leverage factors for some of its short and leveraged ETFs, including a Fund that already trades on the NASDAQ. This change will aim to replicate +2, -2 or -1 times the daily variations of their underlying stocks starting May 04, 2025.\n\nThe potential impact on AAPL's stock price may include:\n\n1. Increased volatility due to leveraged investment results.\n2. Downward pressure from short selling.\n3. More significant price swings due to the speculative nature of the Funds.\n4. Increased vulnerability from the lack of diversification.\n5. Complexity that may contribute to confusion and further price swings.\n\nThese factors may collectively lead to downward pressure on AAPL's stock price.",
+  "daily_change_percentage": -0.6953388463463925,
+  "date_generated": "2025-03-07T11:01:27.577047+00:00"
+}

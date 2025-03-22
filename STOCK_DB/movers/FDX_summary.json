@@ -1,0 +1,9 @@
+{
+  "symbol": "FDX",
+  "exchange": "NASDAQ",
+  "type": "gainer",
+  "period": "day",
+  "summary": "There are no news currently affecting the stock price, fluctuations might be due to market conditions.",
+  "daily_change_percentage": 4.086900297244185,
+  "date_generated": "2025-03-07T11:04:27.074406+00:00"
+}

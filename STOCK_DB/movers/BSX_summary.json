@@ -1,0 +1,9 @@
+{
+  "symbol": "BSX",
+  "exchange": "NASDAQ",
+  "type": "loser",
+  "period": "day",
+  "summary": "There are no news currently affecting the stock price, fluctuations might be due to market conditions.",
+  "daily_change_percentage": -3.6767221290417016,
+  "date_generated": "2025-03-07T11:04:33.086340+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "symbol": "AMT",
+  "exchange": "NASDAQ",
+  "type": "loser",
+  "period": "day",
+  "summary": "There are no news currently affecting the stock price, fluctuations might be due to market conditions.",
+  "daily_change_percentage": -0.22332127139613078,
+  "date_generated": "2025-03-07T11:00:59.879839+00:00"
+}
