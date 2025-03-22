@@ -1,0 +1,658 @@
+2025-02-14 13:16:47,890 - INFO - Starting news collection process
+2025-02-14 13:16:47,890 - ERROR - Stock data file not found at: STOCK_DB/eod_price_data.json
+2025-02-14 13:16:47,890 - INFO - Starting news fetch for 0 companies
+2025-02-14 13:16:47,890 - INFO - News collection completed. Time taken: 0.00 seconds
+2025-02-14 13:17:55,249 - INFO - Starting news collection process
+2025-02-14 13:17:55,249 - ERROR - Stock data file not found at: STOCK_DB/STOCK_DB/eod_price_data.json
+2025-02-14 13:17:55,249 - INFO - Starting news fetch for 0 companies
+2025-02-14 13:17:55,249 - INFO - News collection completed. Time taken: 0.00 seconds
+2025-02-14 13:18:05,628 - INFO - Starting news collection process
+2025-02-14 13:18:22,529 - INFO - Successfully loaded 2459 stocks from local file
+2025-02-14 13:18:22,530 - INFO - Starting news fetch for 2459 companies
+2025-02-14 13:18:22,530 - INFO - Fetching news for AAPL
+2025-02-14 13:18:25,309 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:18:25,310 - INFO - Saved news for AAPL to STOCK_DB/news/AAPL_news.json
+2025-02-14 13:18:25,310 - INFO - Fetching news for NVDA
+2025-02-14 13:18:27,117 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:18:27,117 - INFO - Saved news for NVDA to STOCK_DB/news/NVDA_news.json
+2025-02-14 13:18:27,117 - INFO - Fetching news for MSFT
+2025-02-14 13:18:29,802 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:18:29,802 - INFO - Saved news for MSFT to STOCK_DB/news/MSFT_news.json
+2025-02-14 13:18:29,802 - INFO - Fetching news for GOOGL
+2025-02-14 13:19:55,041 - INFO - Starting news collection process
+2025-02-14 13:20:11,346 - INFO - Successfully loaded 2459 stocks from local file
+2025-02-14 13:20:11,346 - INFO - Starting news fetch for 2459 companies
+2025-02-14 13:20:11,346 - INFO - Fetching news for AAPL
+2025-02-14 13:20:13,678 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:13,679 - INFO - Saved news for AAPL to STOCK_DB/news/AAPL_news.json
+2025-02-14 13:20:13,679 - INFO - Fetching news for NVDA
+2025-02-14 13:20:16,169 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:16,169 - INFO - Saved news for NVDA to STOCK_DB/news/NVDA_news.json
+2025-02-14 13:20:16,169 - INFO - Fetching news for MSFT
+2025-02-14 13:20:18,135 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:18,136 - INFO - Saved news for MSFT to STOCK_DB/news/MSFT_news.json
+2025-02-14 13:20:18,136 - INFO - Fetching news for GOOGL
+2025-02-14 13:20:20,963 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:20,963 - INFO - Saved news for GOOGL to STOCK_DB/news/GOOGL_news.json
+2025-02-14 13:20:20,963 - INFO - Fetching news for META
+2025-02-14 13:20:24,352 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:24,352 - INFO - Saved news for META to STOCK_DB/news/META_news.json
+2025-02-14 13:20:24,352 - INFO - Fetching news for AMZN
+2025-02-14 13:20:26,886 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:26,887 - INFO - Saved news for AMZN to STOCK_DB/news/AMZN_news.json
+2025-02-14 13:20:26,887 - INFO - Fetching news for BRK.B
+2025-02-14 13:20:27,205 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:27,207 - INFO - Saved news for BRK.B to STOCK_DB/news/BRK.B_news.json
+2025-02-14 13:20:27,207 - INFO - Fetching news for LLY
+2025-02-14 13:20:29,548 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:29,548 - INFO - Saved news for LLY to STOCK_DB/news/LLY_news.json
+2025-02-14 13:20:29,548 - INFO - Fetching news for AVGO
+2025-02-14 13:20:31,671 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:31,671 - INFO - Saved news for AVGO to STOCK_DB/news/AVGO_news.json
+2025-02-14 13:20:31,671 - INFO - Fetching news for TSM
+2025-02-14 13:20:34,177 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:34,178 - INFO - Saved news for TSM to STOCK_DB/news/TSM_news.json
+2025-02-14 13:20:34,178 - INFO - Fetching news for JPM
+2025-02-14 13:20:36,363 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:36,363 - INFO - Saved news for JPM to STOCK_DB/news/JPM_news.json
+2025-02-14 13:20:36,363 - INFO - Fetching news for TSLA
+2025-02-14 13:20:38,516 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:38,517 - INFO - Saved news for TSLA to STOCK_DB/news/TSLA_news.json
+2025-02-14 13:20:38,517 - INFO - Fetching news for WMT
+2025-02-14 13:20:41,487 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:41,487 - INFO - Saved news for WMT to STOCK_DB/news/WMT_news.json
+2025-02-14 13:20:41,487 - INFO - Fetching news for UNH
+2025-02-14 13:20:43,845 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:43,846 - INFO - Saved news for UNH to STOCK_DB/news/UNH_news.json
+2025-02-14 13:20:43,846 - INFO - Fetching news for V
+2025-02-14 13:20:46,206 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:46,207 - INFO - Saved news for V to STOCK_DB/news/V_news.json
+2025-02-14 13:20:46,207 - INFO - Fetching news for XOM
+2025-02-14 13:20:48,591 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:48,591 - INFO - Saved news for XOM to STOCK_DB/news/XOM_news.json
+2025-02-14 13:20:48,591 - INFO - Fetching news for PG
+2025-02-14 13:20:50,970 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:50,971 - INFO - Saved news for PG to STOCK_DB/news/PG_news.json
+2025-02-14 13:20:50,971 - INFO - Fetching news for MA
+2025-02-14 13:20:54,095 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:54,096 - INFO - Saved news for MA to STOCK_DB/news/MA_news.json
+2025-02-14 13:20:54,096 - INFO - Fetching news for COST
+2025-02-14 13:20:56,368 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:56,369 - INFO - Saved news for COST to STOCK_DB/news/COST_news.json
+2025-02-14 13:20:56,369 - INFO - Fetching news for JNJ
+2025-02-14 13:20:59,369 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:20:59,369 - INFO - Saved news for JNJ to STOCK_DB/news/JNJ_news.json
+2025-02-14 13:20:59,369 - INFO - Fetching news for ORCL
+2025-02-14 13:21:01,419 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:01,419 - INFO - Saved news for ORCL to STOCK_DB/news/ORCL_news.json
+2025-02-14 13:21:01,419 - INFO - Fetching news for ASML
+2025-02-14 13:21:03,908 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:03,908 - INFO - Saved news for ASML to STOCK_DB/news/ASML_news.json
+2025-02-14 13:21:03,908 - INFO - Fetching news for HD
+2025-02-14 13:21:06,662 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:06,662 - INFO - Saved news for HD to STOCK_DB/news/HD_news.json
+2025-02-14 13:21:06,662 - INFO - Fetching news for ABBV
+2025-02-14 13:21:11,358 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:11,359 - INFO - Saved news for ABBV to STOCK_DB/news/ABBV_news.json
+2025-02-14 13:21:11,359 - INFO - Fetching news for KO
+2025-02-14 13:21:13,883 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:13,883 - INFO - Saved news for KO to STOCK_DB/news/KO_news.json
+2025-02-14 13:21:13,883 - INFO - Fetching news for BAC
+2025-02-14 13:21:15,700 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:15,700 - INFO - Saved news for BAC to STOCK_DB/news/BAC_news.json
+2025-02-14 13:21:15,700 - INFO - Fetching news for NFLX
+2025-02-14 13:21:17,744 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:17,745 - INFO - Saved news for NFLX to STOCK_DB/news/NFLX_news.json
+2025-02-14 13:21:17,745 - INFO - Fetching news for MRK
+2025-02-14 13:21:20,126 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:20,127 - INFO - Saved news for MRK to STOCK_DB/news/MRK_news.json
+2025-02-14 13:21:20,127 - INFO - Fetching news for CVX
+2025-02-14 13:21:22,212 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:22,213 - INFO - Saved news for CVX to STOCK_DB/news/CVX_news.json
+2025-02-14 13:21:22,213 - INFO - Fetching news for AZN
+2025-02-14 13:21:24,536 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:24,536 - INFO - Saved news for AZN to STOCK_DB/news/AZN_news.json
+2025-02-14 13:21:24,536 - INFO - Fetching news for AMD
+2025-02-14 13:21:27,365 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:27,365 - INFO - Saved news for AMD to STOCK_DB/news/AMD_news.json
+2025-02-14 13:21:27,365 - INFO - Fetching news for SAP
+2025-02-14 13:21:30,924 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:30,925 - INFO - Saved news for SAP to STOCK_DB/news/SAP_news.json
+2025-02-14 13:21:30,925 - INFO - Fetching news for CRM
+2025-02-14 13:21:33,485 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:33,486 - INFO - Saved news for CRM to STOCK_DB/news/CRM_news.json
+2025-02-14 13:21:33,486 - INFO - Fetching news for ADBE
+2025-02-14 13:21:35,591 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:35,592 - INFO - Saved news for ADBE to STOCK_DB/news/ADBE_news.json
+2025-02-14 13:21:35,592 - INFO - Fetching news for PEP
+2025-02-14 13:21:37,889 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:37,890 - INFO - Saved news for PEP to STOCK_DB/news/PEP_news.json
+2025-02-14 13:21:37,890 - INFO - Fetching news for TM
+2025-02-14 13:21:41,659 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:41,659 - INFO - Saved news for TM to STOCK_DB/news/TM_news.json
+2025-02-14 13:21:41,659 - INFO - Fetching news for NVS
+2025-02-14 13:21:43,521 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:43,521 - INFO - Saved news for NVS to STOCK_DB/news/NVS_news.json
+2025-02-14 13:21:43,522 - INFO - Fetching news for TMO
+2025-02-14 13:21:45,878 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:45,879 - INFO - Saved news for TMO to STOCK_DB/news/TMO_news.json
+2025-02-14 13:21:45,879 - INFO - Fetching news for SHEL
+2025-02-14 13:21:47,827 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:47,828 - INFO - Saved news for SHEL to STOCK_DB/news/SHEL_news.json
+2025-02-14 13:21:47,828 - INFO - Fetching news for LIN
+2025-02-14 13:21:49,834 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:49,835 - INFO - Saved news for LIN to STOCK_DB/news/LIN_news.json
+2025-02-14 13:21:49,835 - INFO - Fetching news for TMUS
+2025-02-14 13:21:52,560 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:52,561 - INFO - Saved news for TMUS to STOCK_DB/news/TMUS_news.json
+2025-02-14 13:21:52,561 - INFO - Fetching news for ACN
+2025-02-14 13:21:54,673 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:54,673 - INFO - Saved news for ACN to STOCK_DB/news/ACN_news.json
+2025-02-14 13:21:54,674 - INFO - Fetching news for MCD
+2025-02-14 13:21:56,580 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:56,580 - INFO - Saved news for MCD to STOCK_DB/news/MCD_news.json
+2025-02-14 13:21:56,580 - INFO - Fetching news for PDD
+2025-02-14 13:21:59,013 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:21:59,014 - INFO - Saved news for PDD to STOCK_DB/news/PDD_news.json
+2025-02-14 13:21:59,014 - INFO - Fetching news for CSCO
+2025-02-14 13:22:00,792 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:00,792 - INFO - Saved news for CSCO to STOCK_DB/news/CSCO_news.json
+2025-02-14 13:22:00,792 - INFO - Fetching news for BABA
+2025-02-14 13:22:03,221 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:03,221 - INFO - Saved news for BABA to STOCK_DB/news/BABA_news.json
+2025-02-14 13:22:03,221 - INFO - Fetching news for DHR
+2025-02-14 13:22:05,207 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:05,207 - INFO - Saved news for DHR to STOCK_DB/news/DHR_news.json
+2025-02-14 13:22:05,207 - INFO - Fetching news for GE
+2025-02-14 13:22:07,494 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:07,495 - INFO - Saved news for GE to STOCK_DB/news/GE_news.json
+2025-02-14 13:22:07,495 - INFO - Fetching news for TXN
+2025-02-14 13:22:09,838 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:09,838 - INFO - Saved news for TXN to STOCK_DB/news/TXN_news.json
+2025-02-14 13:22:09,838 - INFO - Fetching news for QCOM
+2025-02-14 13:22:12,459 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:12,460 - INFO - Saved news for QCOM to STOCK_DB/news/QCOM_news.json
+2025-02-14 13:22:12,460 - INFO - Fetching news for WFC
+2025-02-14 13:22:15,028 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:15,028 - INFO - Saved news for WFC to STOCK_DB/news/WFC_news.json
+2025-02-14 13:22:15,028 - INFO - Fetching news for PM
+2025-02-14 13:22:17,538 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:17,538 - INFO - Saved news for PM to STOCK_DB/news/PM_news.json
+2025-02-14 13:22:17,538 - INFO - Fetching news for ABT
+2025-02-14 13:22:20,223 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:20,223 - INFO - Saved news for ABT to STOCK_DB/news/ABT_news.json
+2025-02-14 13:22:20,223 - INFO - Fetching news for INTU
+2025-02-14 13:22:23,009 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:23,009 - INFO - Saved news for INTU to STOCK_DB/news/INTU_news.json
+2025-02-14 13:22:23,009 - INFO - Fetching news for AMAT
+2025-02-14 13:22:25,489 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:25,489 - INFO - Saved news for AMAT to STOCK_DB/news/AMAT_news.json
+2025-02-14 13:22:25,489 - INFO - Fetching news for AMGN
+2025-02-14 13:22:27,750 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:27,750 - INFO - Saved news for AMGN to STOCK_DB/news/AMGN_news.json
+2025-02-14 13:22:27,750 - INFO - Fetching news for NOW
+2025-02-14 13:22:30,342 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:30,342 - INFO - Saved news for NOW to STOCK_DB/news/NOW_news.json
+2025-02-14 13:22:30,342 - INFO - Fetching news for AXP
+2025-02-14 13:22:33,290 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:33,291 - INFO - Saved news for AXP to STOCK_DB/news/AXP_news.json
+2025-02-14 13:22:33,291 - INFO - Fetching news for IBM
+2025-02-14 13:22:35,610 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:35,611 - INFO - Saved news for IBM to STOCK_DB/news/IBM_news.json
+2025-02-14 13:22:35,611 - INFO - Fetching news for ISRG
+2025-02-14 13:22:38,168 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:38,169 - INFO - Saved news for ISRG to STOCK_DB/news/ISRG_news.json
+2025-02-14 13:22:38,169 - INFO - Fetching news for VZ
+2025-02-14 13:22:40,020 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:40,020 - INFO - Saved news for VZ to STOCK_DB/news/VZ_news.json
+2025-02-14 13:22:40,020 - INFO - Fetching news for CAT
+2025-02-14 13:22:42,220 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:42,220 - INFO - Saved news for CAT to STOCK_DB/news/CAT_news.json
+2025-02-14 13:22:42,220 - INFO - Fetching news for DIS
+2025-02-14 13:22:44,385 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:44,385 - INFO - Saved news for DIS to STOCK_DB/news/DIS_news.json
+2025-02-14 13:22:44,385 - INFO - Fetching news for GS
+2025-02-14 13:22:47,018 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:47,018 - INFO - Saved news for GS to STOCK_DB/news/GS_news.json
+2025-02-14 13:22:47,018 - INFO - Fetching news for PFE
+2025-02-14 13:22:49,455 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:49,456 - INFO - Saved news for PFE to STOCK_DB/news/PFE_news.json
+2025-02-14 13:22:49,456 - INFO - Fetching news for NEE
+2025-02-14 13:22:53,135 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:53,137 - INFO - Saved news for NEE to STOCK_DB/news/NEE_news.json
+2025-02-14 13:22:53,137 - INFO - Fetching news for MS
+2025-02-14 13:22:55,775 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:55,776 - INFO - Saved news for MS to STOCK_DB/news/MS_news.json
+2025-02-14 13:22:55,776 - INFO - Fetching news for RY
+2025-02-14 13:22:58,584 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:22:58,584 - INFO - Saved news for RY to STOCK_DB/news/RY_news.json
+2025-02-14 13:22:58,584 - INFO - Fetching news for TTE
+2025-02-14 13:23:00,958 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:00,958 - INFO - Saved news for TTE to STOCK_DB/news/TTE_news.json
+2025-02-14 13:23:00,959 - INFO - Fetching news for RTX
+2025-02-14 13:23:03,491 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:03,492 - INFO - Saved news for RTX to STOCK_DB/news/RTX_news.json
+2025-02-14 13:23:03,492 - INFO - Fetching news for SPGI
+2025-02-14 13:23:05,621 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:05,621 - INFO - Saved news for SPGI to STOCK_DB/news/SPGI_news.json
+2025-02-14 13:23:05,621 - INFO - Fetching news for CMCSA
+2025-02-14 13:23:09,609 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:09,609 - INFO - Saved news for CMCSA to STOCK_DB/news/CMCSA_news.json
+2025-02-14 13:23:09,609 - INFO - Fetching news for UBER
+2025-02-14 13:23:11,914 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:11,914 - INFO - Saved news for UBER to STOCK_DB/news/UBER_news.json
+2025-02-14 13:23:11,914 - INFO - Fetching news for UNP
+2025-02-14 13:23:14,226 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:14,227 - INFO - Saved news for UNP to STOCK_DB/news/UNP_news.json
+2025-02-14 13:23:14,227 - INFO - Fetching news for UL
+2025-02-14 13:23:18,530 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:18,531 - INFO - Saved news for UL to STOCK_DB/news/UL_news.json
+2025-02-14 13:23:18,531 - INFO - Fetching news for HSBC
+2025-02-14 13:23:20,393 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:20,393 - INFO - Saved news for HSBC to STOCK_DB/news/HSBC_news.json
+2025-02-14 13:23:20,393 - INFO - Fetching news for SNY
+2025-02-14 13:23:22,195 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:22,196 - INFO - Saved news for SNY to STOCK_DB/news/SNY_news.json
+2025-02-14 13:23:22,196 - INFO - Fetching news for T
+2025-02-14 13:23:24,443 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:24,443 - INFO - Saved news for T to STOCK_DB/news/T_news.json
+2025-02-14 13:23:24,443 - INFO - Fetching news for LOW
+2025-02-14 13:23:26,519 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:26,520 - INFO - Saved news for LOW to STOCK_DB/news/LOW_news.json
+2025-02-14 13:23:26,520 - INFO - Fetching news for HDB
+2025-02-14 13:23:28,703 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:28,704 - INFO - Saved news for HDB to STOCK_DB/news/HDB_news.json
+2025-02-14 13:23:28,704 - INFO - Fetching news for PGR
+2025-02-14 13:23:30,926 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:30,926 - INFO - Saved news for PGR to STOCK_DB/news/PGR_news.json
+2025-02-14 13:23:30,926 - INFO - Fetching news for ARM
+2025-02-14 13:23:32,932 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:32,932 - INFO - Saved news for ARM to STOCK_DB/news/ARM_news.json
+2025-02-14 13:23:32,932 - INFO - Fetching news for TJX
+2025-02-14 13:23:36,658 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:36,659 - INFO - Saved news for TJX to STOCK_DB/news/TJX_news.json
+2025-02-14 13:23:36,659 - INFO - Fetching news for LMT
+2025-02-14 13:23:38,992 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:38,992 - INFO - Saved news for LMT to STOCK_DB/news/LMT_news.json
+2025-02-14 13:23:38,992 - INFO - Fetching news for BHP
+2025-02-14 13:23:41,514 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:41,515 - INFO - Saved news for BHP to STOCK_DB/news/BHP_news.json
+2025-02-14 13:23:41,515 - INFO - Fetching news for BKNG
+2025-02-14 13:23:45,088 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:45,089 - INFO - Saved news for BKNG to STOCK_DB/news/BKNG_news.json
+2025-02-14 13:23:45,089 - INFO - Fetching news for VRTX
+2025-02-14 13:23:47,576 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:47,576 - INFO - Saved news for VRTX to STOCK_DB/news/VRTX_news.json
+2025-02-14 13:23:47,576 - INFO - Fetching news for HON
+2025-02-14 13:23:49,698 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:49,698 - INFO - Saved news for HON to STOCK_DB/news/HON_news.json
+2025-02-14 13:23:49,698 - INFO - Fetching news for REGN
+2025-02-14 13:23:52,354 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:52,355 - INFO - Saved news for REGN to STOCK_DB/news/REGN_news.json
+2025-02-14 13:23:52,355 - INFO - Fetching news for BLK
+2025-02-14 13:23:54,671 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:54,672 - INFO - Saved news for BLK to STOCK_DB/news/BLK_news.json
+2025-02-14 13:23:54,672 - INFO - Fetching news for SYK
+2025-02-14 13:23:56,750 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:56,751 - INFO - Saved news for SYK to STOCK_DB/news/SYK_news.json
+2025-02-14 13:23:56,751 - INFO - Fetching news for COP
+2025-02-14 13:23:58,849 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:23:58,849 - INFO - Saved news for COP to STOCK_DB/news/COP_news.json
+2025-02-14 13:23:58,849 - INFO - Fetching news for NKE
+2025-02-14 13:24:00,666 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:00,666 - INFO - Saved news for NKE to STOCK_DB/news/NKE_news.json
+2025-02-14 13:24:00,666 - INFO - Fetching news for ELV
+2025-02-14 13:24:02,900 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:02,901 - INFO - Saved news for ELV to STOCK_DB/news/ELV_news.json
+2025-02-14 13:24:02,901 - INFO - Fetching news for MUFG
+2025-02-14 13:24:05,139 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:05,139 - INFO - Saved news for MUFG to STOCK_DB/news/MUFG_news.json
+2025-02-14 13:24:05,139 - INFO - Fetching news for MU
+2025-02-14 13:24:07,466 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:07,466 - INFO - Saved news for MU to STOCK_DB/news/MU_news.json
+2025-02-14 13:24:07,466 - INFO - Fetching news for BUD
+2025-02-14 13:24:09,642 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:09,642 - INFO - Saved news for BUD to STOCK_DB/news/BUD_news.json
+2025-02-14 13:24:09,642 - INFO - Fetching news for ETN
+2025-02-14 13:24:11,752 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:11,753 - INFO - Saved news for ETN to STOCK_DB/news/ETN_news.json
+2025-02-14 13:24:11,753 - INFO - Fetching news for SCHW
+2025-02-14 13:24:13,934 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:13,935 - INFO - Saved news for SCHW to STOCK_DB/news/SCHW_news.json
+2025-02-14 13:24:13,935 - INFO - Fetching news for PANW
+2025-02-14 13:24:16,174 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:16,174 - INFO - Saved news for PANW to STOCK_DB/news/PANW_news.json
+2025-02-14 13:24:16,174 - INFO - Fetching news for BSX
+2025-02-14 13:24:18,719 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:18,719 - INFO - Saved news for BSX to STOCK_DB/news/BSX_news.json
+2025-02-14 13:24:18,719 - INFO - Fetching news for C
+2025-02-14 13:24:21,210 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:21,210 - INFO - Saved news for C to STOCK_DB/news/C_news.json
+2025-02-14 13:24:21,210 - INFO - Fetching news for PLD
+2025-02-14 13:24:24,524 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:24,525 - INFO - Saved news for PLD to STOCK_DB/news/PLD_news.json
+2025-02-14 13:24:24,525 - INFO - Fetching news for LRCX
+2025-02-14 13:24:28,635 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:28,636 - INFO - Saved news for LRCX to STOCK_DB/news/LRCX_news.json
+2025-02-14 13:24:28,636 - INFO - Fetching news for ADI
+2025-02-14 13:24:30,886 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:30,886 - INFO - Saved news for ADI to STOCK_DB/news/ADI_news.json
+2025-02-14 13:24:30,886 - INFO - Fetching news for MDT
+2025-02-14 13:24:33,095 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:33,095 - INFO - Saved news for MDT to STOCK_DB/news/MDT_news.json
+2025-02-14 13:24:33,095 - INFO - Fetching news for ANET
+2025-02-14 13:24:35,577 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:35,578 - INFO - Saved news for ANET to STOCK_DB/news/ANET_news.json
+2025-02-14 13:24:35,578 - INFO - Fetching news for SONY
+2025-02-14 13:24:38,114 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:38,115 - INFO - Saved news for SONY to STOCK_DB/news/SONY_news.json
+2025-02-14 13:24:38,115 - INFO - Fetching news for KLAC
+2025-02-14 13:24:40,282 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:40,283 - INFO - Saved news for KLAC to STOCK_DB/news/KLAC_news.json
+2025-02-14 13:24:40,283 - INFO - Fetching news for MMC
+2025-02-14 13:24:42,831 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:42,831 - INFO - Saved news for MMC to STOCK_DB/news/MMC_news.json
+2025-02-14 13:24:42,831 - INFO - Fetching news for CB
+2025-02-14 13:24:44,991 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:44,992 - INFO - Saved news for CB to STOCK_DB/news/CB_news.json
+2025-02-14 13:24:44,992 - INFO - Fetching news for UPS
+2025-02-14 13:24:46,834 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:46,835 - INFO - Saved news for UPS to STOCK_DB/news/UPS_news.json
+2025-02-14 13:24:46,835 - INFO - Fetching news for ADP
+2025-02-14 13:24:49,148 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:49,148 - INFO - Saved news for ADP to STOCK_DB/news/ADP_news.json
+2025-02-14 13:24:49,148 - INFO - Fetching news for RIO
+2025-02-14 13:24:51,198 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:51,199 - INFO - Saved news for RIO to STOCK_DB/news/RIO_news.json
+2025-02-14 13:24:51,199 - INFO - Fetching news for BA
+2025-02-14 13:24:53,213 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:53,214 - INFO - Saved news for BA to STOCK_DB/news/BA_news.json
+2025-02-14 13:24:53,214 - INFO - Fetching news for KKR
+2025-02-14 13:24:55,319 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:55,320 - INFO - Saved news for KKR to STOCK_DB/news/KKR_news.json
+2025-02-14 13:24:55,320 - INFO - Fetching news for TD
+2025-02-14 13:24:57,419 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:24:57,420 - INFO - Saved news for TD to STOCK_DB/news/TD_news.json
+2025-02-14 13:24:57,420 - INFO - Fetching news for SBUX
+2025-02-14 13:25:03,921 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:03,923 - INFO - Saved news for SBUX to STOCK_DB/news/SBUX_news.json
+2025-02-14 13:25:03,923 - INFO - Fetching news for DE
+2025-02-14 13:25:06,904 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:06,904 - INFO - Saved news for DE to STOCK_DB/news/DE_news.json
+2025-02-14 13:25:06,905 - INFO - Fetching news for BX
+2025-02-14 13:25:09,999 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:10,000 - INFO - Saved news for BX to STOCK_DB/news/BX_news.json
+2025-02-14 13:25:10,000 - INFO - Fetching news for AMT
+2025-02-14 13:25:13,131 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:13,132 - INFO - Saved news for AMT to STOCK_DB/news/AMT_news.json
+2025-02-14 13:25:13,132 - INFO - Fetching news for MELI
+2025-02-14 13:25:15,790 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:15,791 - INFO - Saved news for MELI to STOCK_DB/news/MELI_news.json
+2025-02-14 13:25:15,791 - INFO - Fetching news for IBN
+2025-02-14 13:25:18,384 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:18,385 - INFO - Saved news for IBN to STOCK_DB/news/IBN_news.json
+2025-02-14 13:25:18,385 - INFO - Fetching news for SHOP
+2025-02-14 13:25:24,608 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:24,610 - INFO - Saved news for SHOP to STOCK_DB/news/SHOP_news.json
+2025-02-14 13:25:24,610 - INFO - Fetching news for BMY
+2025-02-14 13:25:27,862 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:27,863 - INFO - Saved news for BMY to STOCK_DB/news/BMY_news.json
+2025-02-14 13:25:27,863 - INFO - Fetching news for UBS
+2025-02-14 13:25:30,630 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:30,631 - INFO - Saved news for UBS to STOCK_DB/news/UBS_news.json
+2025-02-14 13:25:30,631 - INFO - Fetching news for HCA
+2025-02-14 13:25:34,704 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:34,705 - INFO - Saved news for HCA to STOCK_DB/news/HCA_news.json
+2025-02-14 13:25:34,705 - INFO - Fetching news for FI
+2025-02-14 13:25:38,482 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:38,483 - INFO - Saved news for FI to STOCK_DB/news/FI_news.json
+2025-02-14 13:25:38,484 - INFO - Fetching news for SO
+2025-02-14 13:25:41,528 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:41,529 - INFO - Saved news for SO to STOCK_DB/news/SO_news.json
+2025-02-14 13:25:41,529 - INFO - Fetching news for CI
+2025-02-14 13:25:44,439 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:44,440 - INFO - Saved news for CI to STOCK_DB/news/CI_news.json
+2025-02-14 13:25:44,440 - INFO - Fetching news for MDLZ
+2025-02-14 13:25:47,905 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:47,906 - INFO - Saved news for MDLZ to STOCK_DB/news/MDLZ_news.json
+2025-02-14 13:25:47,906 - INFO - Fetching news for GILD
+2025-02-14 13:25:50,606 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:50,607 - INFO - Saved news for GILD to STOCK_DB/news/GILD_news.json
+2025-02-14 13:25:50,607 - INFO - Fetching news for PBR.A
+2025-02-14 13:25:50,885 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:50,886 - INFO - Saved news for PBR.A to STOCK_DB/news/PBR.A_news.json
+2025-02-14 13:25:50,887 - INFO - Fetching news for PBR
+2025-02-14 13:25:53,521 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:53,521 - INFO - Saved news for PBR to STOCK_DB/news/PBR_news.json
+2025-02-14 13:25:53,521 - INFO - Fetching news for INFY
+2025-02-14 13:25:58,730 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:25:58,733 - INFO - Saved news for INFY to STOCK_DB/news/INFY_news.json
+2025-02-14 13:25:58,733 - INFO - Fetching news for INTC
+2025-02-14 13:26:01,198 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:01,199 - INFO - Saved news for INTC to STOCK_DB/news/INTC_news.json
+2025-02-14 13:26:01,199 - INFO - Fetching news for ICE
+2025-02-14 13:26:03,943 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:03,943 - INFO - Saved news for ICE to STOCK_DB/news/ICE_news.json
+2025-02-14 13:26:03,943 - INFO - Fetching news for BP
+2025-02-14 13:26:06,637 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:06,638 - INFO - Saved news for BP to STOCK_DB/news/BP_news.json
+2025-02-14 13:26:06,638 - INFO - Fetching news for SHW
+2025-02-14 13:26:09,778 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:09,779 - INFO - Saved news for SHW to STOCK_DB/news/SHW_news.json
+2025-02-14 13:26:09,779 - INFO - Fetching news for MO
+2025-02-14 13:26:12,976 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:12,976 - INFO - Saved news for MO to STOCK_DB/news/MO_news.json
+2025-02-14 13:26:12,976 - INFO - Fetching news for SMFG
+2025-02-14 13:26:17,086 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:17,086 - INFO - Saved news for SMFG to STOCK_DB/news/SMFG_news.json
+2025-02-14 13:26:17,086 - INFO - Fetching news for DUK
+2025-02-14 13:26:21,146 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:21,147 - INFO - Saved news for DUK to STOCK_DB/news/DUK_news.json
+2025-02-14 13:26:21,147 - INFO - Fetching news for MCO
+2025-02-14 13:26:24,424 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:24,424 - INFO - Saved news for MCO to STOCK_DB/news/MCO_news.json
+2025-02-14 13:26:24,424 - INFO - Fetching news for SNPS
+2025-02-14 13:26:26,706 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:26,706 - INFO - Saved news for SNPS to STOCK_DB/news/SNPS_news.json
+2025-02-14 13:26:26,706 - INFO - Fetching news for RELX
+2025-02-14 13:26:30,080 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:30,081 - INFO - Saved news for RELX to STOCK_DB/news/RELX_news.json
+2025-02-14 13:26:30,081 - INFO - Fetching news for RACE
+2025-02-14 13:26:32,923 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:32,924 - INFO - Saved news for RACE to STOCK_DB/news/RACE_news.json
+2025-02-14 13:26:32,924 - INFO - Fetching news for GSK
+2025-02-14 13:26:36,248 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:36,248 - INFO - Saved news for GSK to STOCK_DB/news/GSK_news.json
+2025-02-14 13:26:36,248 - INFO - Fetching news for ENB
+2025-02-14 13:26:39,796 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:39,798 - INFO - Saved news for ENB to STOCK_DB/news/ENB_news.json
+2025-02-14 13:26:39,798 - INFO - Fetching news for CL
+2025-02-14 13:26:42,692 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:42,692 - INFO - Saved news for CL to STOCK_DB/news/CL_news.json
+2025-02-14 13:26:42,692 - INFO - Fetching news for ZTS
+2025-02-14 13:26:45,407 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:45,407 - INFO - Saved news for ZTS to STOCK_DB/news/ZTS_news.json
+2025-02-14 13:26:45,407 - INFO - Fetching news for WM
+2025-02-14 13:26:49,554 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:49,554 - INFO - Saved news for WM to STOCK_DB/news/WM_news.json
+2025-02-14 13:26:49,554 - INFO - Fetching news for SCCO
+2025-02-14 13:26:53,300 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:53,301 - INFO - Saved news for SCCO to STOCK_DB/news/SCCO_news.json
+2025-02-14 13:26:53,301 - INFO - Fetching news for APH
+2025-02-14 13:26:56,971 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:56,972 - INFO - Saved news for APH to STOCK_DB/news/APH_news.json
+2025-02-14 13:26:56,972 - INFO - Fetching news for GD
+2025-02-14 13:26:59,639 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:26:59,640 - INFO - Saved news for GD to STOCK_DB/news/GD_news.json
+2025-02-14 13:26:59,640 - INFO - Fetching news for BTI
+2025-02-14 13:27:02,403 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:02,403 - INFO - Saved news for BTI to STOCK_DB/news/BTI_news.json
+2025-02-14 13:27:02,403 - INFO - Fetching news for DELL
+2025-02-14 13:27:05,085 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:05,085 - INFO - Saved news for DELL to STOCK_DB/news/DELL_news.json
+2025-02-14 13:27:05,085 - INFO - Fetching news for CTAS
+2025-02-14 13:27:08,416 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:08,417 - INFO - Saved news for CTAS to STOCK_DB/news/CTAS_news.json
+2025-02-14 13:27:08,417 - INFO - Fetching news for TT
+2025-02-14 13:27:11,312 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:11,312 - INFO - Saved news for TT to STOCK_DB/news/TT_news.json
+2025-02-14 13:27:11,312 - INFO - Fetching news for CDNS
+2025-02-14 13:27:15,289 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:15,289 - INFO - Saved news for CDNS to STOCK_DB/news/CDNS_news.json
+2025-02-14 13:27:15,289 - INFO - Fetching news for EQIX
+2025-02-14 13:27:17,934 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:17,934 - INFO - Saved news for EQIX to STOCK_DB/news/EQIX_news.json
+2025-02-14 13:27:17,934 - INFO - Fetching news for CNQ
+2025-02-14 13:27:21,648 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:21,648 - INFO - Saved news for CNQ to STOCK_DB/news/CNQ_news.json
+2025-02-14 13:27:21,648 - INFO - Fetching news for CME
+2025-02-14 13:27:24,458 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:24,459 - INFO - Saved news for CME to STOCK_DB/news/CME_news.json
+2025-02-14 13:27:24,459 - INFO - Fetching news for PH
+2025-02-14 13:27:27,675 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:27,676 - INFO - Saved news for PH to STOCK_DB/news/PH_news.json
+2025-02-14 13:27:27,676 - INFO - Fetching news for EQNR
+2025-02-14 13:27:29,338 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:29,338 - INFO - Saved news for EQNR to STOCK_DB/news/EQNR_news.json
+2025-02-14 13:27:29,338 - INFO - Fetching news for TRI
+2025-02-14 13:27:32,066 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:32,067 - INFO - Saved news for TRI to STOCK_DB/news/TRI_news.json
+2025-02-14 13:27:32,067 - INFO - Fetching news for CP
+2025-02-14 13:27:35,262 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:35,263 - INFO - Saved news for CP to STOCK_DB/news/CP_news.json
+2025-02-14 13:27:35,263 - INFO - Fetching news for ABNB
+2025-02-14 13:27:38,030 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:38,031 - INFO - Saved news for ABNB to STOCK_DB/news/ABNB_news.json
+2025-02-14 13:27:38,031 - INFO - Fetching news for NOC
+2025-02-14 13:27:40,534 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:40,534 - INFO - Saved news for NOC to STOCK_DB/news/NOC_news.json
+2025-02-14 13:27:40,534 - INFO - Fetching news for TDG
+2025-02-14 13:27:45,302 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:45,303 - INFO - Saved news for TDG to STOCK_DB/news/TDG_news.json
+2025-02-14 13:27:45,303 - INFO - Fetching news for TGT
+2025-02-14 13:27:48,535 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:48,535 - INFO - Saved news for TGT to STOCK_DB/news/TGT_news.json
+2025-02-14 13:27:48,535 - INFO - Fetching news for CMG
+2025-02-14 13:27:51,004 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:51,005 - INFO - Saved news for CMG to STOCK_DB/news/CMG_news.json
+2025-02-14 13:27:51,005 - INFO - Fetching news for AON
+2025-02-14 13:27:54,078 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:27:54,079 - INFO - Saved news for AON to STOCK_DB/news/AON_news.json
+2025-02-14 13:27:54,079 - INFO - Fetching news for SAN
+2025-02-14 13:28:00,865 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:28:00,866 - INFO - Saved news for SAN to STOCK_DB/news/SAN_news.json
+2025-02-14 13:28:00,866 - INFO - Fetching news for CVS
+2025-02-14 13:28:03,119 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:28:03,120 - INFO - Saved news for CVS to STOCK_DB/news/CVS_news.json
+2025-02-14 13:28:03,120 - INFO - Fetching news for ITW
+2025-02-14 13:28:07,041 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:28:07,042 - INFO - Saved news for ITW to STOCK_DB/news/ITW_news.json
+2025-02-14 13:28:07,042 - INFO - Fetching news for PYPL
+2025-02-14 13:28:09,395 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:28:09,396 - INFO - Saved news for PYPL to STOCK_DB/news/PYPL_news.json
+2025-02-14 13:28:09,397 - INFO - Fetching news for PLTR
+2025-02-14 13:28:11,141 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:28:11,141 - INFO - Saved news for PLTR to STOCK_DB/news/PLTR_news.json
+2025-02-14 13:28:11,141 - INFO - Fetching news for BN
+2025-02-14 13:28:15,242 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:28:15,242 - INFO - Saved news for BN to STOCK_DB/news/BN_news.json
+2025-02-14 13:28:15,242 - INFO - Fetching news for MCK
+2025-02-14 13:28:18,482 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:28:18,482 - INFO - Saved news for MCK to STOCK_DB/news/MCK_news.json
+2025-02-14 13:28:18,482 - INFO - Fetching news for CNI
+2025-02-14 13:28:24,798 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:28:24,799 - INFO - Saved news for CNI to STOCK_DB/news/CNI_news.json
+2025-02-14 13:28:24,799 - INFO - Fetching news for FDX
+2025-02-14 13:28:29,539 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:28:29,539 - INFO - Saved news for FDX to STOCK_DB/news/FDX_news.json
+2025-02-14 13:28:29,539 - INFO - Fetching news for EOG
+2025-02-14 13:28:32,461 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:28:32,463 - INFO - Saved news for EOG to STOCK_DB/news/EOG_news.json
+2025-02-14 13:28:32,463 - INFO - Fetching news for MSI
+2025-02-14 13:28:35,293 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-02-14 13:28:35,293 - INFO - Saved news for MSI to STOCK_DB/news/MSI_news.json
+2025-02-14 13:28:35,294 - INFO - Fetching news for MMM
+2025-03-07 11:47:22,704 - INFO - Starting news collection process
+2025-03-07 11:47:45,047 - INFO - Successfully loaded 2459 stocks from local file
+2025-03-07 11:47:45,049 - INFO - Starting news fetch for 2459 companies
+2025-03-07 11:47:45,049 - INFO - Fetching news for AAPL
+2025-03-07 11:47:47,321 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-03-07 11:47:47,324 - INFO - Saved news for AAPL to STOCK_DB/news/AAPL_news.json
+2025-03-07 11:47:47,324 - INFO - Fetching news for NVDA
+2025-03-07 11:47:49,125 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-03-07 11:47:49,125 - INFO - Saved news for NVDA to STOCK_DB/news/NVDA_news.json
+2025-03-07 11:47:49,125 - INFO - Fetching news for MSFT
+2025-03-07 11:47:51,030 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-03-07 11:47:51,030 - INFO - Saved news for MSFT to STOCK_DB/news/MSFT_news.json
+2025-03-07 11:47:51,030 - INFO - Fetching news for GOOGL
+2025-03-07 11:47:56,792 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-03-07 11:47:56,792 - INFO - Saved news for GOOGL to STOCK_DB/news/GOOGL_news.json
+2025-03-07 11:47:56,792 - INFO - Fetching news for META
+2025-03-07 11:47:58,745 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-03-07 11:47:58,746 - INFO - Saved news for META to STOCK_DB/news/META_news.json
+2025-03-07 11:47:58,746 - INFO - Fetching news for AMZN
+2025-03-07 11:48:02,006 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-03-07 11:48:02,006 - INFO - Saved news for AMZN to STOCK_DB/news/AMZN_news.json
+2025-03-07 11:48:02,006 - INFO - Fetching news for BRK.B
+2025-03-07 11:48:02,311 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-03-07 11:48:02,312 - INFO - Saved news for BRK.B to STOCK_DB/news/BRK.B_news.json
+2025-03-07 11:48:02,312 - INFO - Fetching news for LLY
+2025-03-07 11:48:07,071 - ERROR - Error fetching news for Unknown: name 'ticker' is not defined
+2025-03-07 11:48:07,071 - INFO - Saved news for LLY to STOCK_DB/news/LLY_news.json
+2025-03-07 11:48:07,071 - INFO - Fetching news for AVGO
+2025-03-07 11:49:09,248 - INFO - Starting news collection process
+2025-03-07 11:49:25,283 - INFO - Successfully loaded 2459 stocks from local file
+2025-03-07 11:49:25,284 - INFO - Starting news fetch for 2459 companies
+2025-03-07 11:49:25,284 - INFO - Fetching news for AAPL
+2025-03-07 11:49:29,553 - INFO - Saved news for AAPL to STOCK_DB/news/AAPL_news.json
+2025-03-07 11:49:29,553 - INFO - Fetching news for NVDA
+2025-03-07 11:49:33,669 - INFO - Saved news for NVDA to STOCK_DB/news/NVDA_news.json
+2025-03-07 11:49:33,669 - INFO - Fetching news for MSFT
+2025-03-07 11:49:37,428 - INFO - Saved news for MSFT to STOCK_DB/news/MSFT_news.json
+2025-03-07 11:49:37,428 - INFO - Fetching news for GOOGL
+2025-03-07 11:49:42,760 - INFO - Saved news for GOOGL to STOCK_DB/news/GOOGL_news.json
+2025-03-07 11:49:42,761 - INFO - Fetching news for META
+2025-03-07 11:49:46,349 - INFO - Saved news for META to STOCK_DB/news/META_news.json
+2025-03-07 11:49:46,349 - INFO - Fetching news for AMZN
+2025-03-07 11:49:49,533 - INFO - Saved news for AMZN to STOCK_DB/news/AMZN_news.json
+2025-03-07 11:49:49,533 - INFO - Fetching news for BRK.B
+2025-03-07 11:49:51,619 - INFO - Saved news for BRK.B to STOCK_DB/news/BRK.B_news.json
+2025-03-07 11:49:51,620 - INFO - Fetching news for LLY
+2025-03-07 11:49:55,485 - INFO - Saved news for LLY to STOCK_DB/news/LLY_news.json
+2025-03-07 11:49:55,485 - INFO - Fetching news for AVGO
+2025-03-07 11:49:59,679 - INFO - Saved news for AVGO to STOCK_DB/news/AVGO_news.json
+2025-03-07 11:49:59,680 - INFO - Fetching news for TSM
+2025-03-07 11:50:02,908 - INFO - Saved news for TSM to STOCK_DB/news/TSM_news.json
+2025-03-07 11:50:02,908 - INFO - Fetching news for JPM
+2025-03-07 11:50:06,486 - INFO - Saved news for JPM to STOCK_DB/news/JPM_news.json
+2025-03-07 11:50:06,486 - INFO - Fetching news for TSLA
+2025-03-07 11:50:10,942 - INFO - Saved news for TSLA to STOCK_DB/news/TSLA_news.json
+2025-03-07 11:50:10,942 - INFO - Fetching news for WMT
+2025-03-07 11:50:18,419 - INFO - Saved news for WMT to STOCK_DB/news/WMT_news.json
+2025-03-07 11:50:18,419 - INFO - Fetching news for UNH
+2025-03-07 11:50:24,440 - INFO - Saved news for UNH to STOCK_DB/news/UNH_news.json
+2025-03-07 11:50:24,440 - INFO - Fetching news for V
+2025-03-07 11:50:28,643 - INFO - Saved news for V to STOCK_DB/news/V_news.json
+2025-03-07 11:50:28,643 - INFO - Fetching news for XOM
+2025-03-07 11:50:35,336 - INFO - Saved news for XOM to STOCK_DB/news/XOM_news.json
+2025-03-07 11:50:35,336 - INFO - Fetching news for PG
+2025-03-07 11:50:46,769 - INFO - Saved news for PG to STOCK_DB/news/PG_news.json
+2025-03-07 11:50:46,769 - INFO - Fetching news for MA
+2025-03-07 11:50:51,082 - INFO - Saved news for MA to STOCK_DB/news/MA_news.json
+2025-03-07 11:50:51,082 - INFO - Fetching news for COST
+2025-03-07 11:50:57,526 - INFO - Saved news for COST to STOCK_DB/news/COST_news.json
+2025-03-07 11:50:57,526 - INFO - Fetching news for JNJ
+2025-03-07 11:51:02,837 - INFO - Saved news for JNJ to STOCK_DB/news/JNJ_news.json
+2025-03-07 11:51:02,838 - INFO - Fetching news for ORCL
+2025-03-07 11:51:07,374 - INFO - Saved news for ORCL to STOCK_DB/news/ORCL_news.json
+2025-03-07 11:51:07,374 - INFO - Fetching news for ASML
+2025-03-07 11:51:12,431 - INFO - Saved news for ASML to STOCK_DB/news/ASML_news.json
+2025-03-07 11:51:12,432 - INFO - Fetching news for HD
+2025-03-07 11:51:17,232 - INFO - Saved news for HD to STOCK_DB/news/HD_news.json
+2025-03-07 11:51:17,233 - INFO - Fetching news for ABBV
+2025-03-07 11:51:21,842 - INFO - Saved news for ABBV to STOCK_DB/news/ABBV_news.json
+2025-03-07 11:51:21,842 - INFO - Fetching news for KO
+2025-03-07 11:51:26,076 - INFO - Saved news for KO to STOCK_DB/news/KO_news.json
+2025-03-07 11:51:26,076 - INFO - Fetching news for BAC
+2025-03-07 11:51:37,245 - INFO - Saved news for BAC to STOCK_DB/news/BAC_news.json
+2025-03-07 11:51:37,245 - INFO - Fetching news for NFLX
