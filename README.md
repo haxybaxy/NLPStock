@@ -23,7 +23,7 @@ NLPStock/
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/yourusername/NLPStock.git
+git clone https://github.com/evaks1/NLPStock.git
 cd NLPStock
 
 2. Install dependencies:
