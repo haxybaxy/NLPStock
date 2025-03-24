@@ -43,11 +43,17 @@ def process_company_data(symbol: str, exchange: str, news_articles: List[Dict], 
             "summary": f"There are no news currently affecting the stock price, fluctuations might be due to market conditions.",
         }
 
-    # Extract article text for articles that don't have it yet
+    # Count articles with text and extract text for those without it
     articles_with_text = 0
     for article in news_articles:
+        # Check if article already has text
+        if "full_article_text" in article and article["full_article_text"] and article["full_article_text"] != "Full article text not found.":
+            articles_with_text += 1
+            continue
+            
+        # If not, try to extract it
         url = article.get("url", article.get("link", ""))
-        if url and "full_article_text" not in article:
+        if url:
             full_article_text = extract_article_text(url)
             article["full_article_text"] = full_article_text
             if full_article_text != "Full article text not found.":
