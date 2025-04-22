@@ -7,9 +7,6 @@ from typing import Dict, List, Optional
 import json
 from datetime import datetime
 
-# Initialize paths
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 # Set up logging
 logging.basicConfig(
     level=logging.INFO,
@@ -22,6 +19,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 from data_fetchers.stock_price_fetcher import update_portfolio_data, get_moving_stocks
+from data_fetchers.combined_news_fetcher import fetch_all_news_for_symbol
 from utils.portfolio_manager import PortfolioManager
 from summarization.why_it_moves_simple import why_it_moves
 
@@ -45,6 +43,29 @@ class StockAnalyzer:
         logger.info(f"Updating data for {len(symbols)} stocks in portfolio {portfolio_name}")
         return update_portfolio_data(symbols)
     
+    def fetch_news_for_portfolio(self, portfolio_name: str = "default_portfolio.json") -> Dict:
+        """Fetch news for all stocks in the portfolio"""
+        symbols = self.portfolio_manager.get_portfolio_symbols(portfolio_name)
+        
+        if not symbols:
+            logger.warning(f"Portfolio {portfolio_name} is empty")
+            return {}
+        
+        logger.info(f"Fetching news for {len(symbols)} stocks in portfolio {portfolio_name}")
+        
+        results = {}
+        for symbol in symbols:
+            try:
+                logger.info(f"Fetching news for {symbol}")
+                news = fetch_all_news_for_symbol(symbol)
+                results[symbol] = news
+                logger.info(f"Found {len(news)} news articles for {symbol}")
+            except Exception as e:
+                logger.error(f"Error fetching news for {symbol}: {e}")
+                results[symbol] = []
+        
+        return results
+    
     def find_moving_stocks(self, portfolio_name: str = "default_portfolio.json", threshold: float = 2.0) -> Dict:
         """Find stocks with significant price movements"""
         symbols = self.portfolio_manager.get_portfolio_symbols(portfolio_name)
@@ -58,6 +79,10 @@ class StockAnalyzer:
     
     def analyze_moving_stocks(self, portfolio_name: str = "default_portfolio.json", threshold: float = 2.0) -> List[Dict]:
         """Analyze why stocks are moving and generate summaries"""
+        # First fetch news for all stocks in portfolio
+        self.fetch_news_for_portfolio(portfolio_name)
+        
+        # Then find moving stocks
         moving_stocks = self.find_moving_stocks(portfolio_name, threshold)
         
         if not moving_stocks:
@@ -116,6 +141,9 @@ def main():
     
     # Update portfolio data
     analyzer.update_portfolio_stocks(portfolio_name)
+    
+    # Fetch news first
+    analyzer.fetch_news_for_portfolio(portfolio_name)
     
     # Find and analyze moving stocks
     results = analyzer.analyze_moving_stocks(portfolio_name, threshold)

@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 # Import project modules
 from utils.portfolio_manager import PortfolioManager
 from data_fetchers.stock_price_fetcher import update_portfolio_data, get_stock_info, fetch_stock_data
-from stock_analyzer import StockAnalyzer
+from utils.stock_analyzer import StockAnalyzer
 
 # Set page configuration
 st.set_page_config(
