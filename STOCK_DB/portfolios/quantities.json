@@ -1,5 +1,13 @@
 {
   "AAPL": {
     "default_portfolio.json": 2.0
-  }
+  },
+  "stocks": [
+    {
+      "symbol": "AAPL"
+    },
+    {
+      "symbol": "MSFT"
+    }
+  ]
 }

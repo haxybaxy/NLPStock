@@ -13,7 +13,7 @@ load_dotenv()
 DEFAULT_MODEL = "llama3-8b-8192"
 
 # Directly use the API key here idk why it's not working with the .env file
-WORKING_API_KEY = "x"
+WORKING_API_KEY = "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"
 
 class LLMClient:
     def __init__(self, model=DEFAULT_MODEL):

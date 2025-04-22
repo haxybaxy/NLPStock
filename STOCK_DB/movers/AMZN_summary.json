@@ -2,208 +2,198 @@
   "symbol": "AMZN",
   "exchange": "NASDAQ",
   "type": "gainer",
-  "summary": "Based on the news summaries, the stock price of AMZN (Amazon) might be moving due to several factors:\n\n1. **Earnings reports**: The upcoming earnings report of Alphabet (GOOGL) could impact the tech sector, including Amazon, and influence investor sentiment.\n2. **Valuation**: If Alphabet's shares are undervalued, it could lead to an increase in its price, which might also affect Amazon's stock price.\n3. **Competition**: Rising competition in the tech sector, particularly in the AI space, could impact Amazon's stock price if investors are concerned about the company's ability to compete.\n4. **Growth prospects**: Uncertainty around major sources of growth for Alphabet, such as AI and cybersecurity, could lead to a decrease in investor confidence and negatively impact Amazon's stock price.\n5. **Market sentiment**: Broader market sentiment, including caution ahead of Alphabet's earnings report, could lead to a decrease in demand for Amazon's stock, impacting its price.\n6. **Cloud demand uncertainty**: Uncertainty around cloud demand and reduced estimates for AWS growth could negatively impact Amazon's stock price.\n7. **Competition in AI space**: Increased competition in the AI space could negatively impact Amazon's stock price.\n8. **Government support for AI**: Government support for AI could benefit Amazon and other AI companies, potentially driving up the stock price.\n9. **Hedge fund holdings**: The large number of hedge funds holding Amazon stock could provide support for the price.\n10. **BMO's \"Outperform\" rating**: Despite the price target cut, BMO's \"Outperform\" rating suggests that the analysts believe the stock has potential for growth, despite current uncertainty.\n\nThese factors could influence Amazon's stock price, and investors should consider them when making investment decisions.",
+  "summary": "Based on the news summaries, Amazon's stock price may be moving due to several factors, including:\n\n1. **Tariff headwinds**: Concerns about tariffs and their impact on profitability and gross margins could negatively affect the stock price.\n2. **Artificial Intelligence (AI) spending**: Risks associated with massive AI investments and their potential to not generate sufficient returns could lead to decreased investor confidence and a decline in stock price.\n3. **Cloud infrastructure growth concerns**: Slowdown in cloud infrastructure growth could negatively impact Amazon's overall performance and stock price.\n4. **Analyst sentiment**: Downgrades and reduced price targets from analysts, such as Raymond James, could lead to a decline in stock price.\n5. **E-commerce fears**: Fears about e-commerce and tariffs could continue to weigh on the stock price if they persist.\n\nHowever, there are also positive factors that could influence the stock price, including:\n\n1. **AI excitement**: Excitement around AI and its potential to drive growth and innovation could boost investor confidence and drive the stock price up.\n2. **Reduced trade tensions**: A potential resolution to the US-China trade conflict could benefit Amazon as a global e-commerce company.\n3. **Netflix's growth plans**: The announcement of aggressive growth expectations from Netflix has boosted investor confidence and optimism, which could spill over to other stocks, including Amazon.\n4. **Operational efficiency**: Amazon's focus on improving operational efficiency and reducing costs could lead to increased profitability, which could boost the stock price.\n5. **International market expansion**: Amazon's expansion into international markets, particularly in Asia, could provide a significant growth opportunity for the company, which could benefit the stock price.\n\nOverall, the stock price movement is influenced by a mix of positive and negative factors, and the sentiment of analysts and the overall market will play a crucial role in determining the direction of the stock price.",
   "processed_articles": [
     {
-      "title": "Should You Buy Alphabet Stock Before April 24?",
-      "url": "https://www.fool.com/investing/2025/04/22/should-you-buy-alphabet-stock-before-april-24/?source=eptyholnk0000202&utm_source=yahoo-host-full&utm_medium=feed&utm_campaign=article&referring_guid=acdd6db2-13be-444a-a65c-d125ad796a79&.tsrc=rss",
-      "date": "Tue, 22 Apr 2025 13:30:00 +0000",
-      "key_sentences": "Shares of Alphabet appear to be trading at a significant discount compared to historical valuations based on theforward price-to-earnings(P/E) ratio. Become a Motley Fool member today toget instant access to our top analyst recommendations, in-depth research, investing resources,and more.Learn More Key Points Alphabet reports earnings on April 24, and there are a lot of important things investors should be on the lookout for. Between the advertising ruling, rising competition, and a cloudy picture around major sources of growth such as AI and cybersecurity, I think investors are best off waiting on the sidelines and digesting the earnings call later this week before buying shares. Randi Zuckerberg, a former director of market development and spokeswoman for Facebook and sister to Meta Platforms CEO Mark Zuckerberg, is a member of The Motley Fool's board of directors. John Mackey, former CEO of Whole Foods Market, an Amazon subsidiary, is a member of The Motley Fool’s board of directors.Adam Spataccohas positions in Alphabet, Amazon, Apple, Meta Platforms, Microsoft, Nvidia, and Tesla. With the company slated to report earnings later this week on April 24, you might think scooping up shares in Alphabet now is a no-brainer. While I tend to think software platforms will exhibit some degree of resiliency during this murky economic period, investors should listen to management's words carefully during the earnings call as it pertains to what Alphabet is seeing from its AI customers from a demand perspective. Suzanne Frey, an executive at Alphabet, is a member of The Motley Fool’s board of directors. The Motley Fool recommends the following options: long January 2026 $395 calls on Microsoft and short January 2026 $405 calls on Microsoft. Over the next few weeks, many companies are scheduled to report earnings for the first calendar quarter of 2025.",
+      "title": "This analyst downgraded Amazon ahead of Q1 earnings. Here's why.",
+      "url": "https://finance.yahoo.com/video/analyst-downgraded-amazon-ahead-q1-202900722.html?.tsrc=rss",
+      "date": "Tue, 22 Apr 2025 20:29:00 +0000",
+      "key_sentences": "Raymond James downgraded Amazon (AMZN) to Outperform from Strong Buy and cut their price target for the stock to $195 from $275, citing tariff headwinds and risks associated with artificial intelligence (AI) spending. The analyst behind the note, Raymond James equity research managing director Josh Beck, joinsJulie Hymanon Market Domination to explain the downgrade. The firm also cut its price target on the stock by nearly 30%. Raymond James downgraded shares of Amazon from strong buy to outperform, citing risks related to tariff headwinds and massive AI investments. Joining us now, the analyst behind that call, Josh Beck, Raymond James managing director of equity research. So I think everybody is going through this exercise with the mag 7 and really a lot of tech stocks. And obviously, that pressures gross margins and can pressure operating margins. And in this case, you know, the way that it flows through the PNL is really a certain amount of take rate on the amount of sales of that third party seller. Our EBIT, which is really what a lot of investors focus on because they do guide to this metric, at least one quarter at a time, by about 12 billion, 12, 13 billion. And as a result, we're about 12% below the street for 2026.",
       "named_entities": {
-        "ORG": [
-          "The Motley Fool's Premium Investing Services",
-          "Apple",
-          "Microsoft",
-          "Amazon",
-          "Meta Platforms",
-          "Tesla",
-          "AI",
-          "Google",
-          "YouTube",
-          "Google's",
-          "the Justice Department",
-          "Getty Images",
-          "The Motley Fool’s",
-          "The Motley Fool's",
-          "Whole Foods Market",
-          "The Motley Fool"
-        ],
-        "DATE": [
-          "today",
-          "April 24",
-          "the next few weeks",
-          "the first calendar quarter of 2025",
-          "the last few years",
-          "later this week",
-          "this week",
-          "many years",
-          "recent years",
-          "this year",
-          "January 2026"
-        ],
-        "WORK_OF_ART": [
-          "Learn More Key Points Alphabet"
-        ],
-        "GPE": [
-          "Alphabet",
-          "Nvidia"
-        ],
         "PERSON": [
-          "Alphabet",
-          "Donald Trump",
-          "Suzanne Frey",
-          "Randi Zuckerberg",
-          "Mark Zuckerberg",
-          "John Mackey",
-          "Adam Spataccohas"
+          "Raymond James",
+          "Outperform",
+          "Strong Buy",
+          "Josh Beck",
+          "Josh",
+          "Amazon Basics"
         ],
-        "CARDINAL": [
-          "one"
+        "ORG": [
+          "Amazon",
+          "Hymanon Market Domination",
+          "AI",
+          "Nike",
+          "PNL",
+          "AWS"
         ],
         "MONEY": [
-          "395",
-          "405"
-        ]
-      },
-      "keywords": [
-        "Motley Fool",
-        "Alphabet",
-        "Premium Investing",
-        "Fool Premium",
-        "Motley",
-        "Fool",
-        "Points Alphabet",
-        "Key Points",
-        "Meta Platforms",
-        "Google"
-      ],
-      "condensed_text": "Title: Should You Buy Alphabet Stock Before April 24?\n\nKey information: Shares of Alphabet appear to be trading at a significant discount compared to historical valuations based on theforward price-to-earnings(P/E) ratio. Become a Motley Fool member today toget instant access to our top analyst recommendations, in-depth research, investing resources,and more.Learn More Key Points Alphabet reports earnings on April 24, and there are a lot of important things investors should be on the lookout for. Between the advertising ruling, rising competition, and a cloudy picture around major sources of growth such as AI and cybersecurity, I think investors are best off waiting on the sidelines and digesting the earnings call later this week before buying shares. Randi Zuckerberg, a former director of market development and spokeswoman for Facebook and sister to Meta Platforms CEO Mark Zuckerberg, is a member of The Motley Fool's board of directors. John Mackey, former CEO of Whole Foods Market, an Amazon subsidiary, is a member of The Motley Fool’s board of directors.Adam Spataccohas positions in Alphabet, Amazon, Apple, Meta Platforms, Microsoft, Nvidia, and Tesla. With the company slated to report earnings later this week on April 24, you might think scooping up shares in Alphabet now is a no-brainer. While I tend to think software platforms will exhibit some degree of resiliency during this murky economic period, investors should listen to management's words carefully during the earnings call as it pertains to what Alphabet is seeing from its AI customers from a demand perspective. Suzanne Frey, an executive at Alphabet, is a member of The Motley Fool’s board of directors. The Motley Fool recommends the following options: long January 2026 $395 calls on Microsoft and short January 2026 $405 calls on Microsoft. Over the next few weeks, many companies are scheduled to report earnings for the first calendar quarter of 2025.\n\nNamed entities:\n- ORG: The Motley Fool's Premium Investing Services, Apple, Microsoft, Amazon, Meta Platforms\n- DATE: today, April 24, the next few weeks, the first calendar quarter of 2025, the last few years\n- GPE: Alphabet, Nvidia\n- PERSON: Alphabet, Donald Trump, Suzanne Frey, Randi Zuckerberg, Mark Zuckerberg\n- MONEY: 395, 405\nKeywords: Motley Fool, Alphabet, Premium Investing, Fool Premium, Motley, Fool, Points Alphabet, Key Points, Meta Platforms, Google\n",
-      "summary": "Based on the processed news information, there are several key factors that could influence the stock price of AMZN (Amazon) and potentially relate to its movement. Here are some points to consider:\n\n1. **Earnings reports**: Alphabet (GOOGL) is set to report earnings on April 24, which could impact the tech sector as a whole, including Amazon. Investors may be cautious about buying Alphabet stock ahead of the earnings release, which could affect Amazon's stock price as well.\n2. **Valuation**: The article mentions that Alphabet's shares are trading at a significant discount compared to historical valuations based on the forward price-to-earnings (P/E) ratio. This could indicate that the stock is undervalued, which might lead to an increase in its price.\n3. **Competition**: The article highlights rising competition in the tech sector, which could impact Alphabet's and Amazon's stock prices. If investors are concerned about the competitive landscape, they may be less likely to buy Alphabet stock, which could affect Amazon's stock price as well.\n4. **Growth prospects**: The article mentions that there is a cloudy picture around major sources of growth for Alphabet, such as AI and cybersecurity. If investors are uncertain about the company's growth prospects, they may be less likely to buy its stock, which could impact Amazon's stock price.\n5. **Market sentiment**: The article suggests that investors should be cautious about buying Alphabet stock ahead of the earnings release. If investors are generally cautious about the tech sector, it could lead to a decrease in demand for Alphabet and Amazon's stock, which could impact their prices.\n\nIn terms of how these factors might relate to Amazon's stock price, here are some possible connections:\n\n* If Alphabet's earnings report is strong, it could boost investor confidence in the tech sector, which could lead to an increase in Amazon's stock price.\n* If Alphabet's earnings report is weak, it could lead to a decrease in investor confidence in the tech sector, which could negatively impact Amazon's stock price.\n* If investors are concerned about the competitive landscape and growth prospects for Alphabet, they may be less likely to buy its stock, which could affect Amazon's stock price as well.\n* If investors are generally cautious about the tech sector, it could lead to a decrease in demand for Alphabet and Amazon's stock, which could impact their prices.\n\nOverall, the processed news information suggests that the stock price of AMZN (Amazon) could be influenced by the earnings report of Alphabet (GOOGL), as well as broader market sentiment and concerns about competition and growth prospects."
-    },
-    {
-      "title": "Amazon.com, Inc. (AMZN) Price Target Cut to $235 on Cloud Demand Uncertainty, Long-Term AWS Potential Remains",
-      "url": "https://finance.yahoo.com/news/amazon-com-inc-amzn-price-131301536.html?.tsrc=rss",
-      "date": "Tue, 22 Apr 2025 13:13:01 +0000",
-      "key_sentences": "“Reiterate Outperform, but reduce estimates and Target Price to $235 from $280.” Overall AMZNranks 1ston our list of the AI stocks on Wall Street's radar. If you are looking for an AI stock that is more promising than AMZN but that trades at less than 5 times its earnings, check out our report about thischeapest AI stock. We recently compiled a list of the12 AI Stocks on Wall Street's Radar.In this article, we are going to take a look at where Amazon.com, Inc. (NASDAQ:AMZN) stands against the other AI stocks on Wall Street's radar. It said that “AWS remains best-positioned to benefit from the $5T TAM [total addressable market] opportunity.” Nevertheless, the analysts have reduced their AWS growth estimates for Q1 to 19% from 20% and growth estimates for 2025 to 18% from 20%. While we acknowledge the potential of AMZN as an investment, our conviction lies in the belief that some AI stocks hold greater promise for delivering higher returns and doing so within a shorter time frame. Number of Hedge Fund Holders: 339 Amazon.com Inc (NASDAQ:AMZN) is an American technology company offering e-commerce, cloud computing, and other services, including digital streaming and artificial intelligence solutions. On April 16, BMO reiterated the stock as “Outperform” but lowered its price target from $280 to $235. Today’s revised memos offer much needed guidance on AI adoption and procurement that will remove unnecessary bureaucratic restrictions, allow agencies to be more efficient and cost-effective, and support a competitive American AI marketplace.” For this article, we selected AI stocks by going through news articles, stock analysis, and press releases. READ NOW:10 AI Stocks You Shouldn’t Overlook Right Nowand10 AI Stocks to Watch Amid Market Volatility. Our quarterly newsletter’s strategy selects 14 small-cap and large-cap stocks every quarter and has returned 373.4% since May 2014, beating its benchmark by 218 percentage points  (see more details here).",
-      "named_entities": {
-        "ORG": [
-          "AI Stocks",
-          "Amazon.com, Inc.",
-          "AI",
-          "House",
-          "Congress",
-          "DOGE",
-          "the Department of Government Efficiency",
-          "Watch Amid Market Volatility",
-          "the White House Office of Management and Budget",
-          "The White House",
-          "American AI",
-          "the Federal Government",
-          "Amazon.com Inc",
-          "BMO",
-          "TAM",
-          "Target Price",
-          "Best AI Stocks"
-        ],
-        "PRODUCT": [
-          "Radar",
-          "Monkey"
-        ],
-        "CARDINAL": [
-          "Almost 50",
-          "14",
-          "218",
-          "339",
-          "less than 5"
-        ],
-        "NORP": [
-          "Democrats",
-          "American"
-        ],
-        "PERSON": [
-          "Donald Trump",
-          "Elon Musk",
-          "Musk",
-          "Trump"
-        ],
-        "GPE": [
-          "US"
-        ],
-        "DATE": [
-          "Today",
-          "2024",
-          "quarterly",
-          "every quarter",
-          "May 2014",
-          "April 16",
-          "the second half of 2025",
-          "March",
-          "2025",
-          "the beginning of 2025"
+          "195",
+          "275",
+          "about 12 billion",
+          "13 billion",
+          "multi-billion dollar",
+          "five to 10 billion dollar"
         ],
         "PERCENT": [
-          "373.4%",
-          "Q1 to 19%",
-          "20%",
-          "18%",
-          "around 25%"
-        ],
-        "MONEY": [
-          "$280 to $235",
-          "5",
-          "235",
-          "280"
-        ],
-        "WORK_OF_ART": [
-          "Reiterate Outperform"
-        ]
-      },
-      "keywords": [
-        "Wall Street",
-        "Stocks",
-        "powers Wall",
-        "Wall",
-        "stock",
-        "Street",
-        "Street radar",
-        "government",
-        "Unlock stock",
-        "broker-level newsfeed"
-      ],
-      "condensed_text": "Title: Amazon.com, Inc. (AMZN) Price Target Cut to $235 on Cloud Demand Uncertainty, Long-Term AWS Potential Remains\n\nKey information: “Reiterate Outperform, but reduce estimates and Target Price to $235 from $280.” Overall AMZNranks 1ston our list of the AI stocks on Wall Street's radar. If you are looking for an AI stock that is more promising than AMZN but that trades at less than 5 times its earnings, check out our report about thischeapest AI stock. We recently compiled a list of the12 AI Stocks on Wall Street's Radar.In this article, we are going to take a look at where Amazon.com, Inc. (NASDAQ:AMZN) stands against the other AI stocks on Wall Street's radar. It said that “AWS remains best-positioned to benefit from the $5T TAM [total addressable market] opportunity.” Nevertheless, the analysts have reduced their AWS growth estimates for Q1 to 19% from 20% and growth estimates for 2025 to 18% from 20%. While we acknowledge the potential of AMZN as an investment, our conviction lies in the belief that some AI stocks hold greater promise for delivering higher returns and doing so within a shorter time frame. Number of Hedge Fund Holders: 339 Amazon.com Inc (NASDAQ:AMZN) is an American technology company offering e-commerce, cloud computing, and other services, including digital streaming and artificial intelligence solutions. On April 16, BMO reiterated the stock as “Outperform” but lowered its price target from $280 to $235. Today’s revised memos offer much needed guidance on AI adoption and procurement that will remove unnecessary bureaucratic restrictions, allow agencies to be more efficient and cost-effective, and support a competitive American AI marketplace.” For this article, we selected AI stocks by going through news articles, stock analysis, and press releases. READ NOW:10 AI Stocks You Shouldn’t Overlook Right Nowand10 AI Stocks to Watch Amid Market Volatility. Our quarterly newsletter’s strategy selects 14 small-cap and large-cap stocks every quarter and has returned 373.4% since May 2014, beating its benchmark by 218 percentage points  (see more details here).\n\nNamed entities:\n- ORG: AI Stocks, Amazon.com, Inc., AI, House, Congress\n- PERSON: Donald Trump, Elon Musk, Musk, Trump\n- GPE: US\n- DATE: Today, 2024, quarterly, every quarter, May 2014\n- PERCENT: 373.4%, Q1 to 19%, 20%, 18%, around 25%\n- MONEY: $280 to $235, 5, 235, 280\nKeywords: Wall Street, Stocks, powers Wall, Wall, stock, Street, Street radar, government, Unlock stock, broker-level newsfeed\n",
-      "summary": "The processed news information suggests that Amazon.com, Inc. (AMZN) stock price target has been cut to $235 from $280 by BMO, citing uncertainty in cloud demand and reduced estimates for AWS growth. Despite this, the analysts still maintain an \"Outperform\" rating. Here are some key factors that could influence the stock price:\n\n1. **Cloud demand uncertainty**: The reduced estimates for AWS growth may have contributed to the price target cut. If cloud demand continues to be uncertain, it could impact the company's revenue and profitability, leading to a decline in stock price.\n2. **AWS growth estimates**: The reduced growth estimates for Q1 and 2025 may also have contributed to the price target cut. If AWS growth does not meet these reduced estimates, it could negatively impact the stock price.\n3. **Competition in AI space**: The article mentions that some AI stocks may hold greater promise for delivering higher returns and doing so within a shorter time frame. This could lead to increased competition for AMZN in the AI space, potentially impacting its stock price.\n4. **Government support for AI**: The article mentions that the government is working to remove bureaucratic restrictions and support a competitive American AI marketplace. If this support materializes, it could benefit AMZN and other AI companies, potentially driving up the stock price.\n5. **Hedge fund holdings**: The article mentions that 339 hedge funds hold AMZN stock. If these hedge funds continue to hold the stock, it could provide support for the price.\n6. **BMO's \"Outperform\" rating**: Despite the price target cut, BMO still maintains an \"Outperform\" rating for AMZN. This could indicate that the analysts believe the stock has potential for growth, despite the current uncertainty.\n7. **Quarterly newsletter performance**: The article mentions that the quarterly newsletter's strategy has returned 373.4% since May 2014, beating its benchmark by 218 percentage points. This could suggest that the newsletter's strategy is effective, and AMZN may be a good investment opportunity.\n\nOverall, the key factors that could influence the stock price of AMZN are:\n\n* Cloud demand uncertainty and reduced AWS growth estimates\n* Competition in the AI space\n* Government support for AI\n* Hedge fund holdings\n* BMO's \"Outperform\" rating\n* Quarterly newsletter performance\n\nThese factors could impact the stock price, and investors should consider them when making investment decisions."
-    },
-    {
-      "title": "Market Chatter: Trump Administration Pressures India to Give Amazon, Walmart Full Access",
-      "url": "https://finance.yahoo.com/news/market-chatter-trump-administration-pressures-125616213.html?.tsrc=rss",
-      "date": "Tue, 22 Apr 2025 12:56:16 +0000",
-      "key_sentences": "Amazon.com (AMZN) and Walmart (WMT) could benefit from full access to India's e-commerce market if t Unlock stock picks and a broker-level newsfeed that powers Wall Street.",
-      "named_entities": {
-        "ORG": [
-          "Amazon.com",
-          "Walmart",
-          "WMT"
+          "nearly 30%",
+          "about 12%",
+          "15%"
         ],
         "GPE": [
-          "India"
+          "China",
+          "AI"
+        ],
+        "ORDINAL": [
+          "first",
+          "third",
+          "second"
+        ],
+        "DATE": [
+          "yesterday",
+          "our out year",
+          "April",
+          "2026",
+          "at least one quarter",
+          "this year",
+          "May 1st",
+          "next year"
+        ],
+        "CARDINAL": [
+          "half",
+          "12",
+          "four",
+          "three"
         ]
       },
       "keywords": [
-        "Wall Street",
-        "powers Wall",
-        "Unlock stock",
-        "stock picks",
-        "broker-level newsfeed",
-        "Street",
-        "Wall",
-        "AMZN",
-        "WMT",
-        "Unlock"
+        "Raymond James",
+        "Amazon",
+        "lot",
+        "James",
+        "James downgraded",
+        "Josh Beck",
+        "Raymond",
+        "Hymanon Market",
+        "Market Domination",
+        "business"
       ],
-      "condensed_text": "Title: Market Chatter: Trump Administration Pressures India to Give Amazon, Walmart Full Access\n\nKey information: Amazon.com (AMZN) and Walmart (WMT) could benefit from full access to India's e-commerce market if t Unlock stock picks and a broker-level newsfeed that powers Wall Street.\n\nNamed entities:\n- ORG: Amazon.com, Walmart, WMT\n- GPE: India\nKeywords: Wall Street, powers Wall, Unlock stock, stock picks, broker-level newsfeed, Street, Wall, AMZN, WMT, Unlock\n",
-      "summary": "Based on the processed news information, here's an analysis of how it might relate to the stock moving up and key factors that could influence the stock price:\n\n**Positive Impact on AMZN Stock:**\n\n1. **Increased Access to India's E-commerce Market**: If the Trump Administration successfully pressures India to grant full access to Amazon and Walmart, it could lead to a significant increase in sales and revenue for both companies. This could positively impact Amazon's stock price.\n2. **Competitive Advantage**: With full access to the Indian market, Amazon would have a competitive advantage over other e-commerce players, including local Indian companies. This could lead to increased market share and revenue growth, driving up the stock price.\n\n**Key Factors Influencing Stock Price:**\n\n1. **Regulatory Environment**: The outcome of the negotiations between the Trump Administration and India's government will have a significant impact on Amazon's stock price. If India grants full access, the stock price may rise. Conversely, if negotiations fail or India imposes restrictions, the stock price may decline.\n2. **Competition**: The level of competition in the Indian e-commerce market will also influence Amazon's stock price. If Amazon gains a significant market share advantage, the stock price may rise. However, if local Indian companies or other international players gain traction, the stock price may decline.\n3. **Global Economic Factors**: Global economic conditions, such as trade tensions and economic growth, can also impact Amazon's stock price. If the global economy is growing, Amazon's stock price may rise. Conversely, if trade tensions or economic downturns occur, the stock price may decline.\n4. **Company Performance**: Amazon's financial performance, including revenue growth, profitability, and cash flow, will also influence its stock price. If the company reports strong financials, the stock price may rise. Conversely, if financial performance is weak, the stock price may decline.\n\n**Conclusion:**\n\nThe processed news information suggests that a positive outcome in the negotiations between the Trump Administration and India's government could lead to increased access to India's e-commerce market, giving Amazon a competitive advantage. This could positively impact Amazon's stock price. However, regulatory, competitive, global economic, and company performance factors will also influence the stock price. Investors should consider these factors when making investment decisions."
+      "condensed_text": "Title: This analyst downgraded Amazon ahead of Q1 earnings. Here's why.\n\nKey information: Raymond James downgraded Amazon (AMZN) to Outperform from Strong Buy and cut their price target for the stock to $195 from $275, citing tariff headwinds and risks associated with artificial intelligence (AI) spending. The analyst behind the note, Raymond James equity research managing director Josh Beck, joinsJulie Hymanon Market Domination to explain the downgrade. The firm also cut its price target on the stock by nearly 30%. Raymond James downgraded shares of Amazon from strong buy to outperform, citing risks related to tariff headwinds and massive AI investments. Joining us now, the analyst behind that call, Josh Beck, Raymond James managing director of equity research. So I think everybody is going through this exercise with the mag 7 and really a lot of tech stocks. And obviously, that pressures gross margins and can pressure operating margins. And in this case, you know, the way that it flows through the PNL is really a certain amount of take rate on the amount of sales of that third party seller. Our EBIT, which is really what a lot of investors focus on because they do guide to this metric, at least one quarter at a time, by about 12 billion, 12, 13 billion. And as a result, we're about 12% below the street for 2026.\n\nNamed entities:\n- PERSON: Raymond James, Outperform, Strong Buy, Josh Beck, Josh\n- ORG: Amazon, Hymanon Market Domination, AI, Nike, PNL\n- MONEY: 195, 275, about 12 billion, 13 billion, multi-billion dollar\n- PERCENT: nearly 30%, about 12%, 15%\n- GPE: China, AI\n- DATE: yesterday, our out year, April, 2026, at least one quarter\nKeywords: Raymond James, Amazon, lot, James, James downgraded, Josh Beck, Raymond, Hymanon Market, Market Domination, business\n",
+      "summary": "Based on the processed news information, here are the key factors that could influence the stock price of AMZN (Amazon):\n\n1. **Tariff Headwinds**: The analyst, Josh Beck, cited tariff headwinds as one of the reasons for downgrading Amazon's stock. This suggests that the company may face increased costs due to tariffs, which could negatively impact its profitability and stock price.\n2. **Artificial Intelligence (AI) Spending**: The analyst also mentioned risks associated with massive AI investments, which could be a concern for investors. If Amazon's AI spending is not generating sufficient returns, it could lead to decreased investor confidence and a decline in stock price.\n3. **Gross Margins and Operating Margins**: The analyst mentioned that tariff headwinds could pressure gross margins and operating margins, which could negatively impact the company's profitability.\n4. **EBIT Guidance**: The analyst cut their EBIT (Earnings Before Interest and Taxes) guidance by about 12 billion to 13 billion, which could be a concern for investors who focus on this metric.\n5. **Price Target Reduction**: Raymond James reduced their price target for Amazon stock by nearly 30%, from $275 to $195. This suggests that the analyst is less optimistic about the company's future performance, which could lead to a decline in stock price.\n\nThese factors could contribute to a decline in Amazon's stock price, but it's essential to consider the following:\n\n* The analyst downgraded Amazon to Outperform from Strong Buy, which suggests that the company is still expected to perform well, just not as strongly as previously thought.\n* The price target reduction is significant, but it's still above the current stock price, which could indicate that the analyst believes the stock has room to grow.\n\nOverall, the processed news information suggests that Amazon's stock price may be influenced by concerns about tariff headwinds, AI spending, and profitability. However, the analyst's downgrade to Outperform and the price target reduction are not as severe as a complete sell rating, which could indicate that the stock has some potential for growth."
+    },
+    {
+      "title": "Cloud Infrastructure Growth Could Cool This Year Despite AI Excitement, Analyst Says",
+      "url": "https://finance.yahoo.com/m/94e65c5a-4318-347d-b84d-8731823848ae/cloud-infrastructure-growth.html?.tsrc=rss",
+      "date": "Tue, 22 Apr 2025 20:05:21 +0000",
+      "key_sentences": "Amazon stock has been hit by fears about tariffs and e-commerce but analysts are warning about cloud risks as well.",
+      "named_entities": {
+        "ORG": [
+          "Amazon"
+        ]
+      },
+      "keywords": [
+        "Amazon stock",
+        "cloud risks",
+        "Amazon",
+        "stock",
+        "hit",
+        "fears",
+        "tariffs",
+        "e-commerce",
+        "analysts",
+        "warning"
+      ],
+      "condensed_text": "Title: Cloud Infrastructure Growth Could Cool This Year Despite AI Excitement, Analyst Says\n\nKey information: Amazon stock has been hit by fears about tariffs and e-commerce but analysts are warning about cloud risks as well.\n\nNamed entities:\n- ORG: Amazon\nKeywords: Amazon stock, cloud risks, Amazon, stock, hit, fears, tariffs, e-commerce, analysts, warning\n",
+      "summary": "Based on the processed news information, here's an analysis of how it might relate to the stock moving up and key factors that could influence the stock price:\n\n**Cloud Infrastructure Growth Concerns**: The article highlights concerns about cloud infrastructure growth, which could impact Amazon's stock price. Cloud computing is a significant revenue stream for Amazon Web Services (AWS), and any slowdown in growth could negatively affect the company's overall performance.\n\n**Key Factors Influencing Stock Price**:\n\n1. **Tariffs and E-commerce Fears**: The article mentions that Amazon's stock has been hit by fears about tariffs and e-commerce. These concerns could continue to weigh on the stock price if they persist.\n2. **Cloud Risks**: The warning from analysts about cloud risks could lead to a decrease in investor confidence, causing the stock price to drop.\n3. **AI Excitement**: The article mentions AI excitement, which could be a positive factor for Amazon's stock price. AI is a growing area for the company, and any advancements or innovations in this space could boost investor confidence and drive the stock price up.\n4. **Analyst Sentiment**: The warning from analysts could be a key factor in influencing the stock price. If analysts' concerns are validated, it could lead to a decline in the stock price. However, if analysts' warnings are seen as overly cautious, it could lead to a rebound in the stock price.\n\n**Possible Scenarios**:\n\n1. **Cloud Infrastructure Growth Concerns**: If the concerns about cloud infrastructure growth are validated, it could lead to a decline in the stock price. This could be due to decreased investor confidence and reduced expectations for future growth.\n2. **AI Excitement**: If AI excitement continues to grow, it could lead to an increase in the stock price. This could be due to increased investor confidence and expectations for future growth and innovation.\n3. **Tariffs and E-commerce Fears**: If tariffs and e-commerce fears subside, it could lead to an increase in the stock price. This could be due to reduced uncertainty and increased investor confidence.\n\nIn conclusion, the processed news information highlights concerns about cloud infrastructure growth, which could negatively impact Amazon's stock price. However, the excitement around AI and the potential for tariffs and e-commerce fears to subside could lead to an increase in the stock price. The sentiment of analysts and the overall market will play a crucial role in determining the direction of the stock price."
+    },
+    {
+      "title": "Amazon, Netflix, FTAI Aviation, and Tesla Shares Are Soaring, What You Need To Know",
+      "url": "https://finance.yahoo.com/news/amazon-netflix-ftai-aviation-tesla-191129919.html?.tsrc=rss",
+      "date": "Tue, 22 Apr 2025 19:11:29 +0000",
+      "key_sentences": "In its annual review, Netflix laid out plans to more than double revenue from $39 billion to $80 billion, signaling aggressive growth expectations likely tied to subscriber expansion, content monetization, and international market expansion. Among others, following stocks were impacted: Online Retail company Amazon (NASDAQ:AMZN) jumped 4.9%. The previous big move we wrote about was 7 days ago when the stock gained 5.9% on the news that The Wall Street Journal reported that the company (NFLX) set a lofty goal to reach a $1 trillion market valuation by 2030. Additionally, the company aimed to triple its operating income from $10 billion, reflecting a focus on significantly improving profits, likely through increased operational efficiency and a more disciplined approach to content spending. Investors who bought $1,000 worth of Netflix’s shares 5 years ago would now be looking at an investment worth $2,469. Netflix is up 17.4% since the beginning of the year, and at $1,040 per share, it is trading close to its 52-week high of $1,059 from February 2025. The stock market overreacts to news, and big price drops can present good opportunities to buy high-quality stocks. A number of stocks jumped in the afternoon session after investor sentiment improved on renewed optimism that the US-China trade conflict might be nearing a resolution. His comments signaled to markets that both sides might be motivated to seek common ground, raising expectations for reduced tariffs and more stability across markets. Netflix’s shares are not very volatile and have only had 5 moves greater than 5% over the last year.",
+      "named_entities": {
+        "TIME": [
+          "afternoon"
+        ],
+        "GPE": [
+          "US",
+          "China",
+          "Netflix",
+          "AI"
+        ],
+        "ORG": [
+          "Treasury",
+          "Amazon",
+          "Consumer Subscription company",
+          "NASDAQ",
+          "NFLX",
+          "Netflix?Access",
+          "Vehicle Parts Distributors",
+          "Tesla?Access",
+          "Netflix",
+          "The Wall Street Journal",
+          "Microsoft",
+          "Apple"
+        ],
+        "PERSON": [
+          "Scott Bessent"
+        ],
+        "CARDINAL": [
+          "two",
+          "5"
+        ],
+        "PERCENT": [
+          "4.9%",
+          "7.6%",
+          "5.4%",
+          "6.1%",
+          "greater than",
+          "5%",
+          "5.9%",
+          "17.4%"
+        ],
+        "DATE": [
+          "the last year",
+          "today",
+          "7 days ago",
+          "2030",
+          "annual",
+          "the beginning of the year",
+          "52-week",
+          "February 2025",
+          "5 years ago",
+          "Today",
+          "more than 20 years ago"
+        ],
+        "MONEY": [
+          "$1 trillion",
+          "$39 billion to",
+          "$80 billion",
+          "$10 billion",
+          "1,040",
+          "1,059",
+          "1,000",
+          "2,469"
+        ],
+        "ORDINAL": [
+          "first"
+        ]
+      },
+      "keywords": [
+        "analysis report",
+        "full analysis",
+        "afternoon session",
+        "sentiment improved",
+        "renewed optimism",
+        "Secretary Scott",
+        "Scott Bessent",
+        "NASDAQ",
+        "Netflix",
+        "FTAI Aviation"
+      ],
+      "condensed_text": "Title: Amazon, Netflix, FTAI Aviation, and Tesla Shares Are Soaring, What You Need To Know\n\nKey information: In its annual review, Netflix laid out plans to more than double revenue from $39 billion to $80 billion, signaling aggressive growth expectations likely tied to subscriber expansion, content monetization, and international market expansion. Among others, following stocks were impacted: Online Retail company Amazon (NASDAQ:AMZN) jumped 4.9%. The previous big move we wrote about was 7 days ago when the stock gained 5.9% on the news that The Wall Street Journal reported that the company (NFLX) set a lofty goal to reach a $1 trillion market valuation by 2030. Additionally, the company aimed to triple its operating income from $10 billion, reflecting a focus on significantly improving profits, likely through increased operational efficiency and a more disciplined approach to content spending. Investors who bought $1,000 worth of Netflix’s shares 5 years ago would now be looking at an investment worth $2,469. Netflix is up 17.4% since the beginning of the year, and at $1,040 per share, it is trading close to its 52-week high of $1,059 from February 2025. The stock market overreacts to news, and big price drops can present good opportunities to buy high-quality stocks. A number of stocks jumped in the afternoon session after investor sentiment improved on renewed optimism that the US-China trade conflict might be nearing a resolution. His comments signaled to markets that both sides might be motivated to seek common ground, raising expectations for reduced tariffs and more stability across markets. Netflix’s shares are not very volatile and have only had 5 moves greater than 5% over the last year.\n\nNamed entities:\n- GPE: US, China, Netflix, AI\n- ORG: Treasury, Amazon, Consumer Subscription company, NASDAQ, NFLX\n- PERSON: Scott Bessent\n- PERCENT: 4.9%, 7.6%, 5.4%, 6.1%, greater than\n- DATE: the last year, today, 7 days ago, 2030, annual\n- MONEY: $1 trillion, $39 billion to, $80 billion, $10 billion, 1,040\nKeywords: analysis report, full analysis, afternoon session, sentiment improved, renewed optimism, Secretary Scott, Scott Bessent, NASDAQ, Netflix, FTAI Aviation\n",
+      "summary": "Based on the processed news information, here are the key factors that could influence Amazon's (AMZN) stock price:\n\n1. **Positive sentiment from Netflix's growth plans**: Netflix's announcement of aggressive growth expectations, including more than doubling revenue, has boosted investor confidence. This optimism has spilled over to other stocks, including Amazon, which jumped 4.9%.\n2. **Growth expectations**: Amazon's stock price is likely influenced by the growth expectations from Netflix's plans. As a leading e-commerce company, Amazon's growth prospects are closely tied to consumer spending and online retail trends.\n3. **Increased investor optimism**: The news about Netflix's growth plans has likely increased investor optimism across the market, leading to a broader rally in stocks, including Amazon.\n4. **Reduced trade tensions**: The renewed optimism about a potential resolution to the US-China trade conflict has also contributed to the positive sentiment in the market. As a global e-commerce company, Amazon is exposed to trade tensions and any resolution could benefit the company.\n5. **Less volatility**: Netflix's relatively low volatility (only 5 moves greater than 5% over the last year) suggests that investors are becoming more comfortable with the company's growth prospects, which could also benefit Amazon's stock price.\n\nIn terms of specific factors that could influence Amazon's stock price, the following are worth noting:\n\n* **Revenue growth**: Amazon's revenue growth is closely tied to consumer spending and online retail trends. If Netflix's growth plans are successful, it could lead to increased consumer spending and online retail growth, benefiting Amazon.\n* **Operational efficiency**: Amazon's focus on improving operational efficiency and reducing costs could lead to increased profitability, which could boost the stock price.\n* **International market expansion**: Amazon's expansion into international markets, particularly in Asia, could provide a significant growth opportunity for the company, which could benefit the stock price.\n\nOverall, the positive sentiment from Netflix's growth plans, increased investor optimism, and reduced trade tensions have likely contributed to Amazon's stock price moving up."
     }
   ],
-  "daily_change_percentage": 2.1396045993045085,
-  "date_generated": "2025-04-22T14:04:41.596713+00:00"
+  "daily_change_percentage": 3.502262189247643,
+  "date_generated": "2025-04-22T21:15:54.610862+00:00"
 }

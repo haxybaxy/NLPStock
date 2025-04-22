@@ -2,18 +2,18 @@
   "AAPL": {
     "prices": {
       "2025-04-22": {
-        "('Close', 'AAPL')": 197.4250030517578,
-        "('High', 'AAPL')": 197.82000732421875,
+        "('Close', 'AAPL')": 199.74000549316406,
+        "('High', 'AAPL')": 201.5500030517578,
         "('Low', 'AAPL')": 196.0,
-        "('Open', 'AAPL')": 196.07000732421875,
-        "('Volume', 'AAPL')": 4917659.0
+        "('Open', 'AAPL')": 196.1199951171875,
+        "('Volume', 'AAPL')": 51869389.0
       },
       "2025-04-21": {
         "('Close', 'AAPL')": 193.16000366210938,
         "('High', 'AAPL')": 193.8000030517578,
         "('Low', 'AAPL')": 189.80999755859375,
         "('Open', 'AAPL')": 193.27000427246094,
-        "('Volume', 'AAPL')": 46663300.0
+        "('Volume', 'AAPL')": 46742500.0
       },
       "2025-04-17": {
         "('Close', 'AAPL')": 196.97999572753906,
@@ -156,29 +156,29 @@
       "industry": "Consumer Electronics",
       "country": "United States",
       "exchange": "NMS",
-      "market_cap": 3024506322944,
-      "pe_ratio": 31.338476,
+      "market_cap": 3059856965632,
+      "pe_ratio": 31.704762,
       "dividend_yield": 52.0,
       "fifty_two_week_high": 260.1,
       "fifty_two_week_low": 164.92
     },
-    "last_updated": "2025-04-22T15:55:35.374912"
+    "last_updated": "2025-04-22T23:06:02.416176"
   },
   "MSFT": {
     "prices": {
       "2025-04-22": {
-        "('Close', 'MSFT')": 360.57501220703125,
-        "('High', 'MSFT')": 363.5,
+        "('Close', 'MSFT')": 366.82000732421875,
+        "('High', 'MSFT')": 367.760009765625,
         "('Low', 'MSFT')": 359.8601989746094,
-        "('Open', 'MSFT')": 363.4200134277344,
-        "('Volume', 'MSFT')": 1901470.0
+        "('Open', 'MSFT')": 363.375,
+        "('Volume', 'MSFT')": 17975458.0
       },
       "2025-04-21": {
         "('Close', 'MSFT')": 359.1199951171875,
         "('High', 'MSFT')": 364.4800109863281,
         "('Low', 'MSFT')": 355.6700134277344,
         "('Open', 'MSFT')": 362.82000732421875,
-        "('Volume', 'MSFT')": 20786800.0
+        "('Volume', 'MSFT')": 20807300.0
       },
       "2025-04-17": {
         "('Close', 'MSFT')": 367.7799987792969,
@@ -321,29 +321,29 @@
       "industry": "Software - Infrastructure",
       "country": "United States",
       "exchange": "NMS",
-      "market_cap": 2745147850752,
-      "pe_ratio": 29.008448,
+      "market_cap": 2792692383744,
+      "pe_ratio": 29.51086,
       "dividend_yield": 92.0,
       "fifty_two_week_high": 468.35,
       "fifty_two_week_low": 344.79
     },
-    "last_updated": "2025-04-22T15:55:35.619162"
+    "last_updated": "2025-04-22T23:06:02.821489"
   },
   "GOOGL": {
     "prices": {
       "2025-04-22": {
-        "('Close', 'GOOGL')": 149.44000244140625,
-        "('High', 'GOOGL')": 149.5800018310547,
+        "('Close', 'GOOGL')": 151.47000122070312,
+        "('High', 'GOOGL')": 152.19000244140625,
         "('Low', 'GOOGL')": 148.5399932861328,
         "('Open', 'GOOGL')": 148.88999938964844,
-        "('Volume', 'GOOGL')": 3154057.0
+        "('Volume', 'GOOGL')": 25458224.0
       },
       "2025-04-21": {
         "('Close', 'GOOGL')": 147.6699981689453,
         "('High', 'GOOGL')": 148.9499969482422,
         "('Low', 'GOOGL')": 146.10000610351562,
         "('Open', 'GOOGL')": 148.8800048828125,
-        "('Volume', 'GOOGL')": 26012000.0
+        "('Volume', 'GOOGL')": 26049100.0
       },
       "2025-04-17": {
         "('Close', 'GOOGL')": 151.16000366210938,
@@ -486,29 +486,29 @@
       "industry": "Internet Content & Information",
       "country": "United States",
       "exchange": "NMS",
-      "market_cap": 1876840677376,
-      "pe_ratio": 18.608967,
+      "market_cap": 1902463156224,
+      "pe_ratio": 18.863014,
       "dividend_yield": 54.0,
       "fifty_two_week_high": 207.05,
       "fifty_two_week_low": 140.53
     },
-    "last_updated": "2025-04-22T15:55:35.912357"
+    "last_updated": "2025-04-22T23:06:03.156204"
   },
   "AMZN": {
     "prices": {
       "2025-04-22": {
-        "('Close', 'AMZN')": 170.53990173339844,
-        "('High', 'AMZN')": 171.10000610351562,
+        "('Close', 'AMZN')": 173.17999267578125,
+        "('High', 'AMZN')": 176.77999877929688,
         "('Low', 'AMZN')": 169.35000610351562,
         "('Open', 'AMZN')": 169.84500122070312,
-        "('Volume', 'AMZN')": 5478319.0
+        "('Volume', 'AMZN')": 52854921.0
       },
       "2025-04-21": {
         "('Close', 'AMZN')": 167.32000732421875,
         "('High', 'AMZN')": 169.60000610351562,
         "('Low', 'AMZN')": 165.2899932861328,
         "('Open', 'AMZN')": 169.60000610351562,
-        "('Volume', 'AMZN')": 47989800.0
+        "('Volume', 'AMZN')": 48126100.0
       },
       "2025-04-17": {
         "('Close', 'AMZN')": 172.61000061035156,
@@ -651,29 +651,29 @@
       "industry": "Internet Retail",
       "country": "United States",
       "exchange": "NMS",
-      "market_cap": 1866945396736,
-      "pe_ratio": 30.781588,
+      "market_cap": 1895957266432,
+      "pe_ratio": 31.259926,
       "dividend_yield": 0,
       "fifty_two_week_high": 242.52,
       "fifty_two_week_low": 151.61
     },
-    "last_updated": "2025-04-22T15:55:36.135592"
+    "last_updated": "2025-04-22T23:06:03.422277"
   },
   "META": {
     "prices": {
       "2025-04-22": {
-        "('Close', 'META')": 491.2149963378906,
-        "('High', 'META')": 493.4999084472656,
-        "('Low', 'META')": 488.0000915527344,
-        "('Open', 'META')": 491.6300048828125,
-        "('Volume', 'META')": 1528930.0
+        "('Close', 'META')": 500.2799987792969,
+        "('High', 'META')": 506.8800048828125,
+        "('Low', 'META')": 486.3599853515625,
+        "('Open', 'META')": 491.8699951171875,
+        "('Volume', 'META')": 16271312.0
       },
       "2025-04-21": {
         "('Close', 'META')": 484.6600036621094,
         "('High', 'META')": 493.5,
         "('Low', 'META')": 479.79998779296875,
         "('Open', 'META')": 491.3299865722656,
-        "('Volume', 'META')": 16129000.0
+        "('Volume', 'META')": 16166000.0
       },
       "2025-04-17": {
         "('Close', 'META')": 501.4800109863281,
@@ -816,12 +816,12 @@
       "industry": "Internet Content & Information",
       "country": "United States",
       "exchange": "NMS",
-      "market_cap": 1283409444864,
-      "pe_ratio": 20.601257,
+      "market_cap": 1306761363456,
+      "pe_ratio": 20.9761,
       "dividend_yield": 43.0,
       "fifty_two_week_high": 740.91,
       "fifty_two_week_low": 414.5
     },
-    "last_updated": "2025-04-22T15:55:36.425650"
+    "last_updated": "2025-04-22T23:06:03.687072"
   }
 }

@@ -1,334 +1,229 @@
 {
   "symbol": "GOOGL",
   "exchange": "NASDAQ",
-  "type": "loser",
-  "summary": "Based on the news summaries, the stock price of GOOGL (Google-parent Alphabet) might be moving due to the following reasons:\n\n1. **Anti-trust issues and regulatory challenges**: The company is facing regulatory challenges due to anti-trust issues, which could negatively impact its stock price.\n2. **Uncertainty around the punishment phase**: The uncertainty around the punishment phase for anti-trust violations could lead to volatility and potentially downward pressure on the stock price.\n3. **Comparison to Meta**: The comparison to Meta's situation, which is more concerning, could negatively impact GOOGL's stock price.\n4. **Broader market sell-off and volatility**: The broader market sell-off and volatility could affect GOOGL's stock price, as it is a large-cap technology stock.\n5. **Market trends and sentiment**: The stock's performance is often tied to market sentiment, and if the broader market trends are negative, it could negatively impact GOOGL's stock price.\n\nAdditionally, the article mentions that GOOGL is set to release its first-quarter earnings, which could impact the stock price. If the earnings report meets or exceeds expectations, the stock may rise, but if it disappoints, the stock may fall.",
+  "type": "gainer",
+  "summary": "Based on the news summaries, the stock price of GOOGL (Alphabet, parent company of Google) may be moving due to the following factors:\n\n1. **Trade deal hopes**: A potential trade deal between the US and China could lead to increased economic stability and growth, benefiting companies like Alphabet.\n2. **Investor sentiment**: Increased optimism about the market, as reflected in the VIX dropping and investors pouring $8 billion into gold funds, could lead to increased demand for GOOGL's stock.\n3. **Cryptocurrency market**: The 5% increase in Bitcoin's value and its breaking above $90,000 could have a positive impact on GOOGL's stock price, as the company is well-positioned to benefit from the growing adoption of cryptocurrencies and blockchain technology.\n4. **Cloud competition**: A slowdown in Amazon Web Services' (AWS) growth could lead to increased competition from other cloud providers like Google Cloud Platform (GCP), potentially impacting GOOGL's stock price.\n5. **AI excitement**: The excitement around AI could be a positive factor for GOOGL's stock, as the company is a leader in AI research and development.\n\nOverall, the stock price of GOOGL may be moving due to a combination of these factors, with a potential positive impact from trade deal hopes, investor sentiment, and cryptocurrency market trends, and a potential negative impact from cloud competition and AI excitement.",
   "processed_articles": [
     {
-      "title": "How to trade the Magnificent 7 amid the market sell-off",
-      "url": "https://finance.yahoo.com/video/trade-magnificent-7-amid-market-120021370.html?.tsrc=rss",
-      "date": "Tue, 22 Apr 2025 12:00:21 +0000",
-      "key_sentences": "As US stocks (^DJI,^GSPC,^IXIC) sell off, Solidarity Capital CEO Jeff McClean sits down withJosh Liptonto check in on the \"Magnificent Seven,\" made up of Nvidia (NVDA), Alphabet (GOOG,GOOGL), Tesla (TSLA), Microsoft (MSFT), Amazon (AMZN), Meta (META), and Apple (AAPL). Google, meta, both are in kind of their own self-created turmoil right now with the anti-trust issues. Like Google already has been found guilty. Now we're just deciding punishment phase, but I'm bullish on Google because we think the parts are worth more than the sum. A little bit, but the uncertainty of exactly what the result is, because how I feel about Google is different how I feel about meta. Unlock stock picks and a broker-level newsfeed that powers Wall Street. To watch more expert insights and analysis on the latest market action, check out more Asking for a Trendhere. It's been happening over the past couple weeks of a deterioration. The speed is Yeah, the speed from February 19th to April 7th was dramatic. But I think now the extreme volatility, knock on wood is hopefully behind us and the volatility will stay elevated.",
+      "title": "The Dow soars 1,000 points as markets hang on hope for a China trade deal",
+      "url": "https://finance.yahoo.com/news/stocks-look-rebound-earnings-roll-122200182.html?.tsrc=rss",
+      "date": "Tue, 22 Apr 2025 20:10:00 +0000",
+      "key_sentences": "Shares of Google (GOOGL) parent Alphabet rose 3% Tuesday. The International Monetary Funddowngraded its global economic growth forecastfor 2025 to 2.8%, a decrease from the previous estimate of 3.3%, citing the impact of widespread tariffs and escalating trade tensions under President Donald Trump. Last week, investors poured $8 billion into gold funds — double the peak weekly inflows seen during the pandemic — pushing the four-week average to $4 billion, according to Bank of America Global Research (BAC). After rising to fresh highs overnight, gold fell 1.2% to $3,383 an ounce, snapping a record-setting streak even as JPMorgan (JPM) analysts said they still see a path to $4,000 an ounce in the months ahead. Meanwhile, Bitcoin popped 5% to break above $90,000 for the first time since March, with some traders viewing crypto as a hedge against ongoing policy whiplash. RTX slid over 9% after warning that tariffs could slash up to $850 million from its 2025 profits. The VIX, Wall Street’s fear gauge, dropped almost 10%, signaling a cooldown in volatility.Gold continued its climb, up 0.4% to $3,439. Gold extended its historic rally overnight, climbing above $3,500 for the first time. Volatility retreated, with the VIX dropping over 9%, and investors rotated out of safe havens. Defense contractors took a hit after earnings reports showed margin compression and rising tariff risks.",
       "named_entities": {
         "GPE": [
-          "US",
-          "Nvidia",
-          "Alphabet"
-        ],
-        "ORG": [
-          "Solidarity Capital",
-          "NVDA",
-          "GOOG",
-          "Microsoft",
-          "MSFT",
-          "Amazon",
-          "Meta",
-          "META",
-          "Apple",
-          "VIX",
-          "Trump",
-          "Truth Social",
-          "MAG",
-          "Google",
-          "YouTube",
-          "AdEx"
-        ],
-        "PERSON": [
-          "Jeff McClean",
-          "Liptonto",
-          "Alphabet",
-          "Tesla",
-          "Jeff",
-          "Uncle Sam",
-          "Trump",
-          "Alphabet 2",
-          "Instagram"
-        ],
-        "DATE": [
-          "a day like today",
-          "the weekend",
-          "significantly year",
-          "the past couple weeks",
-          "February 19th to April 7th",
-          "the 20s",
-          "like 2008",
-          "2009",
-          "another couple weeks",
-          "the next week"
-        ],
-        "PERCENT": [
-          "5%",
-          "7%",
-          "9%",
-          "about 20%",
-          "30%"
-        ],
-        "CARDINAL": [
-          "one",
-          "two",
-          "7"
-        ],
-        "ORDINAL": [
-          "third"
-        ],
-        "MONEY": [
-          "trillion dollar",
-          "a couple billion dollar",
-          "couple billion"
-        ],
-        "QUANTITY": [
-          "a ton"
-        ]
-      },
-      "keywords": [
-        "Wall Street",
-        "powers Wall",
-        "Yeah",
-        "Solidarity Capital",
-        "broker-level newsfeed",
-        "Meta",
-        "Jeff",
-        "Unlock stock",
-        "stock picks",
-        "Street"
-      ],
-      "condensed_text": "Title: How to trade the Magnificent 7 amid the market sell-off\n\nKey information: As US stocks (^DJI,^GSPC,^IXIC) sell off, Solidarity Capital CEO Jeff McClean sits down withJosh Liptonto check in on the \"Magnificent Seven,\" made up of Nvidia (NVDA), Alphabet (GOOG,GOOGL), Tesla (TSLA), Microsoft (MSFT), Amazon (AMZN), Meta (META), and Apple (AAPL). Google, meta, both are in kind of their own self-created turmoil right now with the anti-trust issues. Like Google already has been found guilty. Now we're just deciding punishment phase, but I'm bullish on Google because we think the parts are worth more than the sum. A little bit, but the uncertainty of exactly what the result is, because how I feel about Google is different how I feel about meta. Unlock stock picks and a broker-level newsfeed that powers Wall Street. To watch more expert insights and analysis on the latest market action, check out more Asking for a Trendhere. It's been happening over the past couple weeks of a deterioration. The speed is Yeah, the speed from February 19th to April 7th was dramatic. But I think now the extreme volatility, knock on wood is hopefully behind us and the volatility will stay elevated.\n\nNamed entities:\n- GPE: US, Nvidia, Alphabet\n- ORG: Solidarity Capital, NVDA, GOOG, Microsoft, MSFT\n- PERSON: Jeff McClean, Liptonto, Alphabet, Tesla, Jeff\n- DATE: a day like today, the weekend, significantly year, the past couple weeks, February 19th to April 7th\n- PERCENT: 5%, 7%, 9%, about 20%, 30%\n- MONEY: trillion dollar, a couple billion dollar, couple billion\nKeywords: Wall Street, powers Wall, Yeah, Solidarity Capital, broker-level newsfeed, Meta, Jeff, Unlock stock, stock picks, Street\n",
-      "summary": "Based on the processed news information, here are the key factors that could influence GOOGL stock price and potentially relate to its movement down:\n\n1. **Anti-trust issues**: The CEO of Solidarity Capital, Jeff McClean, mentions that Google (GOOGL) is in its own self-created turmoil due to anti-trust issues. This suggests that the company is facing regulatory challenges, which could negatively impact its stock price.\n2. **Uncertainty around punishment phase**: The CEO notes that Google has already been found guilty of anti-trust violations, but the punishment phase is still uncertain. This uncertainty could lead to volatility and potentially downward pressure on the stock price.\n3. **Comparison to Meta**: The CEO expresses a bullish sentiment on Google, but notes that the uncertainty around the punishment phase is different from his view on Meta. This implies that Meta's situation may be more concerning, which could negatively impact GOOGL stock price.\n4. **Market sell-off**: The article mentions a broader market sell-off, which could affect GOOGL stock price. As a large-cap technology stock, Google's performance is often tied to market sentiment.\n5. **Volatility**: The CEO mentions that the extreme volatility in the market may be behind us, but the volatility will likely stay elevated. This could lead to increased price fluctuations, which could negatively impact GOOGL stock price.\n6. **Broader market trends**: The article mentions the \"Magnificent Seven\" stocks, which includes GOOGL, along with other large-cap technology stocks. If these stocks are experiencing a sell-off, it could be a sign of broader market trends that could negatively impact GOOGL stock price.\n\nIn summary, the processed news information suggests that GOOGL stock price could be influenced by:\n\n* Anti-trust issues and regulatory challenges\n* Uncertainty around the punishment phase\n* Comparison to Meta's situation\n* Broader market sell-off and volatility\n* Market trends and sentiment\n\nThese factors could contribute to a downward movement in GOOGL stock price."
-    },
-    {
-      "title": "Are Magnificent 7 stocks still worth the hype? Have your say",
-      "url": "https://uk.finance.yahoo.com/news/magnificent-7-stocks-tesla-alphabet-poll-114425890.html?.tsrc=rss",
-      "date": "Tue, 22 Apr 2025 11:44:25 +0000",
-      "key_sentences": "AJ Bell's (AJB.L) investment experts Russ Mould, Danni Hewson and Dan Coatsworth said in comment published on Thursday that the Mag 7 have lost nearly $4tn (£3tn) of stock market capitalisation between them since their aggregate valuation hit $18.4tn on 24 December, which represents a drop of one-fifth. Electric vehicle maker Tesla (TSLA) is set to release first quarter earnings after the bell on Tuesday, while Google-parent Alphabet (GOOG) is slated to publish its results on Thursday. High expectations going into the first earnings season of 2025 also saw share price falls after this group of companies reported in January and February. In January, the release of a lower-cost artificial intelligence (AI) model by Chinese start-up DeepSeek rattled investors in the Mag 7, as it prompted concerns over the level of spending by major tech companies on AI. Read more:Stocks to watch this week: Tesla, Alphabet, Intel, Boeing and Unilever Since then, broader market volatility on the back of US president Donald Trump's fast-moving tariff agenda has weighed on the Mag 7, amid concerns that this will tip the US into recession. \"That still means their combined worth is 5% above where it was a year ago, so it is too early to talk about a real loss of faith in them — even if gold is up by a third in the past 12 months, to hint at some kind of change in the market’s mood,\" they said. \"Any shift in sentiment toward this septet could have wide-ranging implications, though, given how they still represent almost one third of the total stock market valuation of the S&P 500 (^GSPC) index.\" Two Magnificent 7 companies are due to report this week, kicking off this earnings season's set of results for this group. Read more: ECB cuts interest rates for seventh time in a year Six FTSE 100 stock ideas for the second quarter, according to Barclays What you need to know about investing in VCTs Download the Yahoo Finance app, available forAppleandAndroid. The Mag 7 — also comprised of Nvidia (NVDA), Apple (AAPL), Microsoft (MSFT), Meta (META) and Amazon (AMZN) — are all in the red year-to-date.",
-      "named_entities": {
-        "CARDINAL": [
-          "Two",
-          "one-fifth",
-          "almost one third",
-          "100"
-        ],
-        "DATE": [
-          "this week",
-          "season",
-          "first quarter",
-          "Tuesday",
-          "Thursday",
-          "the red year-to-date",
-          "January",
-          "season of 2025",
-          "February",
-          "24 December",
-          "a year ago",
-          "the past 12 months",
-          "a year",
-          "the second quarter"
-        ],
-        "PERSON": [
-          "Tesla",
-          "Alphabet",
-          "Donald Trump",
-          "Russ Mould",
-          "Danni Hewson",
-          "Dan Coatsworth",
-          "Barclays"
-        ],
-        "ORG": [
-          "Google-parent",
-          "Nvidia",
-          "NVDA",
-          "Apple",
-          "Microsoft",
-          "MSFT",
-          "Meta",
-          "META",
-          "Amazon",
-          "AI",
-          "Tesla",
-          "Intel",
-          "Boeing",
-          "Unilever",
-          "AJ Bell's",
-          "the Mag 7",
-          "FTSE"
-        ],
-        "EVENT": [
-          "The Mag 7",
-          "the Mag 7"
-        ],
-        "NORP": [
-          "Chinese"
-        ],
-        "LOC": [
-          "the Mag 7"
-        ],
-        "ORDINAL": [
-          "first",
-          "third",
-          "seventh"
-        ],
-        "GPE": [
-          "Alphabet",
-          "US",
-          "AJB.L"
-        ],
-        "MONEY": [
-          "nearly $4tn",
-          "3tn",
-          "18.4tn"
-        ],
-        "PERCENT": [
-          "5%"
-        ]
-      },
-      "keywords": [
-        "Mag",
-        "earnings season",
-        "Google-parent Alphabet",
-        "Magnificent",
-        "stock market",
-        "earnings",
-        "season set",
-        "maker Tesla",
-        "market",
-        "set"
-      ],
-      "condensed_text": "Title: Are Magnificent 7 stocks still worth the hype? Have your say\n\nKey information: AJ Bell's (AJB.L) investment experts Russ Mould, Danni Hewson and Dan Coatsworth said in comment published on Thursday that the Mag 7 have lost nearly $4tn (£3tn) of stock market capitalisation between them since their aggregate valuation hit $18.4tn on 24 December, which represents a drop of one-fifth. Electric vehicle maker Tesla (TSLA) is set to release first quarter earnings after the bell on Tuesday, while Google-parent Alphabet (GOOG) is slated to publish its results on Thursday. High expectations going into the first earnings season of 2025 also saw share price falls after this group of companies reported in January and February. In January, the release of a lower-cost artificial intelligence (AI) model by Chinese start-up DeepSeek rattled investors in the Mag 7, as it prompted concerns over the level of spending by major tech companies on AI. Read more:Stocks to watch this week: Tesla, Alphabet, Intel, Boeing and Unilever Since then, broader market volatility on the back of US president Donald Trump's fast-moving tariff agenda has weighed on the Mag 7, amid concerns that this will tip the US into recession. \"That still means their combined worth is 5% above where it was a year ago, so it is too early to talk about a real loss of faith in them — even if gold is up by a third in the past 12 months, to hint at some kind of change in the market’s mood,\" they said. \"Any shift in sentiment toward this septet could have wide-ranging implications, though, given how they still represent almost one third of the total stock market valuation of the S&P 500 (^GSPC) index.\" Two Magnificent 7 companies are due to report this week, kicking off this earnings season's set of results for this group. Read more: ECB cuts interest rates for seventh time in a year Six FTSE 100 stock ideas for the second quarter, according to Barclays What you need to know about investing in VCTs Download the Yahoo Finance app, available forAppleandAndroid. The Mag 7 — also comprised of Nvidia (NVDA), Apple (AAPL), Microsoft (MSFT), Meta (META) and Amazon (AMZN) — are all in the red year-to-date.\n\nNamed entities:\n- DATE: this week, season, first quarter, Tuesday, Thursday\n- PERSON: Tesla, Alphabet, Donald Trump, Russ Mould, Danni Hewson\n- ORG: Google-parent, Nvidia, NVDA, Apple, Microsoft\n- GPE: Alphabet, US, AJB.L\n- MONEY: nearly $4tn, 3tn, 18.4tn\n- PERCENT: 5%\nKeywords: Mag, earnings season, Google-parent Alphabet, Magnificent, stock market, earnings, season set, maker Tesla, market, set\n",
-      "summary": "Based on the processed news information, here are the key factors that could influence GOOGL (Google-parent Alphabet) stock price:\n\n1. **Earnings expectations**: GOOGL is set to release its first-quarter earnings on Thursday, which may impact the stock price. If the earnings report meets or exceeds expectations, the stock may rise. Conversely, if the report disappoints, the stock may fall.\n2. **Broader market volatility**: The article mentions that broader market volatility, driven by US President Donald Trump's fast-moving tariff agenda, has weighed on the Mag 7 stocks, including GOOGL. This uncertainty may continue to affect the stock price.\n3. **Concerns over AI spending**: The release of a lower-cost AI model by Chinese start-up DeepSeek in January raised concerns over the level of spending by major tech companies on AI, including GOOGL. This may have contributed to the stock's decline.\n4. **Competition from other tech giants**: As part of the Mag 7, GOOGL competes with other tech giants like Tesla, Apple, Microsoft, Meta, and Amazon. Any negative news or earnings reports from these companies may impact GOOGL's stock price.\n5. **Market sentiment**: The article mentions that the Mag 7 stocks have lost nearly $4tn in market capitalization since their aggregate valuation hit $18.4tn. This decline may have contributed to a shift in market sentiment, with investors becoming more cautious about investing in these stocks.\n6. **Interest rates and recession concerns**: The article mentions that the Mag 7 stocks may be affected by concerns over the US economy entering a recession, which could be triggered by the tariff agenda. This may impact GOOGL's stock price, as investors become more risk-averse.\n7. **Valuation**: Despite the decline in market capitalization, the Mag 7 stocks still represent almost one-third of the total stock market valuation of the S&P 500 index. This may indicate that investors still have a high level of confidence in these stocks, which could support the stock price.\n\nOverall, the factors mentioned in the article suggest that GOOGL's stock price may be influenced by a combination of earnings expectations, broader market volatility, concerns over AI spending, competition from other tech giants, market sentiment, interest rates, and recession concerns."
-    },
-    {
-      "title": "Tesla at Risk of a ‘Throwaway Year’ Without a New Narrative From Earnings",
-      "url": "https://finance.yahoo.com/news/tesla-risk-throwaway-without-narrative-110309935.html?.tsrc=rss",
-      "date": "Tue, 22 Apr 2025 11:03:09 +0000",
-      "key_sentences": "Most Read from Bloomberg DOGE Visits National Gallery of Art to Discuss Museum’s Legal Status Trump Gives New York ‘One Last Chance’ to End Congestion Fee Trump Administration Takes Over New York Penn Station Revamp The Racial Wealth Gap Is Not Just About Money Nashville’s $3 Billion Transit Plan Brings a Call for Zoning Reform This year is off to a dismal start as Musk’s political entanglements have pushed Tesla’s sales to a nearly three-year low in the first three months, leading a slew of Wall Street analysts to slash their growth expectations. Analysts have been dialing back their estimates sharply over the past month, with profit expectations falling by about 12% and revenue forecasts down over 6%. The automaker’s souring outlook and towering valuation has spooked investors, leading to a 53% plunge in Tesla’s stock price since it hit a record in December. “Tesla’s stock is stuck in an information air pocket as Elon Musk focused on his DOGE work, while their car sales skid and political headwinds build in important markets.” Shoring up investor confidence will largely depend on whether Musk starts to step away from his involvement with the Trump administration and the Department of Government Efficiency. Earnings for the first quarter are expected to fall from the prior-year level and revenue is estimated to stay flat when the company reports results after markets close on Tuesday, according to data compiled by Bloomberg. However, Munster also expects this to be the year that “sets the stage for a major rebound in 2026 and beyond.” Tesla shares have slumped this year with concerns swirling about the damage that Musk’s political activities have done to the company’s brand — and sales — adding to wider investor anxiety about economic growth and US trade policy. The 36% drop in the share price from January through March was the third-largest quarterly decline since the company’s 2010 public listing. Still, many investors and analysts remain worried about the slowing pace of the company’s core electric-car making business, which brought in 90% of its revenue last year. “Tesla faces questions on increasingly weaker fundamentals,” said Dan Levy, analyst at Barclays, noting that the company’s profit margin from the core auto business is expected to reach a new low, and after a soft start it may be increasingly difficult to see sales volume rising this year. “Musk needs to bring the voltage on this earnings call to get the stock out of stall speed,” said Dave Mazza, chief executive officer of Roundhill Investments, who owns the stock.",
-      "named_entities": {
-        "PERSON": [
-          "Bloomberg",
-          "Elon Musk",
-          "Musk",
-          "Dave Mazza",
-          "Trump",
-          "Gene Munster",
-          "Munster",
-          "Eric Schiffer",
-          "Dan Levy",
-          "Levy",
-          "Bloomberg L.P."
-        ],
-        "ORG": [
-          "Tesla Inc.",
-          "National Gallery of Art to Discuss Museum’s Legal Status",
-          "Tesla",
-          "Roundhill Investments",
-          "DOGE",
-          "the Department of Government Efficiency",
-          "Deepwater Asset Management",
-          "General Motors Co.",
-          "Ford Motor Co.",
-          "Patriarch Organization",
-          "Alphabet Inc.’s",
-          "BYD Co.",
-          "Barclays",
-          "JD.com Inc.",
-          "Roblox",
-          "Columbine High School",
-          "the Robb Elementary School",
-          "Uber Technologies Inc.",
-          "the US Federal Trade Commission",
-          "Verizon Communications",
-          "Manhattan Associates Inc.",
-          "MANH US",
-          "Pegasystems Inc.",
-          "Subrat Patnaik",
-          "Men Think College",
-          "the Manosphere Eight Charts Show Men Are Falling Behind",
-          "Trump"
-        ],
-        "CARDINAL": [
-          "one",
-          "One",
-          "78",
-          "19",
-          "23"
-        ],
-        "DATE": [
-          "Tuesday",
-          "months",
-          "This year",
-          "three-year",
-          "the first three months",
-          "December",
-          "this month",
-          "later this summer",
-          "the first quarter",
-          "prior-year",
-          "the past month",
-          "2025",
-          "a throwaway year",
-          "the year",
-          "2026",
-          "this year",
-          "January through March",
-          "quarterly",
-          "2010",
-          "a few months",
-          "June",
-          "last year",
-          "the past weekend",
-          "at least three months",
-          "the first half of the year"
-        ],
-        "GPE": [
-          "New York ‘",
-          "New York Penn Station Revamp",
-          "US",
-          "Los Angeles",
-          "Austin",
-          "EV",
+          "U.S.",
+          "Netflix",
           "China",
-          "Washington",
-          "Beijing",
-          "Meituan",
-          "Uvalde",
-          "Texas"
+          "Cybercab",
+          "Verizon"
         ],
-        "MONEY": [
-          "$3 Billion"
+        "DATE": [
+          "Tuesday",
+          "Russell 2000",
+          "the months ahead",
+          "March",
+          "2025",
+          "Wednesday",
+          "today",
+          "the week",
+          "this year",
+          "Last week",
+          "weekly",
+          "four-week",
+          "the end of 2025",
+          "Monday",
+          "three-year"
+        ],
+        "ORG": [
+          "Dow",
+          "Nasdaq",
+          "VIX",
+          "JPMorgan",
+          "JPM",
+          "Northrop Grumman",
+          "Tesla",
+          "NFLX",
+          "GE Aerospace",
+          "GE",
+          "Treasury",
+          "U.S. Treasury",
+          "The International Monetary Fund",
+          "U.S.-China",
+          "the Federal Reserve",
+          "The International Monetary Funddowngraded",
+          "theIMF",
+          "IMF",
+          "Trump",
+          "Bank of America Global Research",
+          "BAC",
+          "onKalshi",
+          "CFTC",
+          "Fed",
+          "Wells Fargo",
+          "WFC",
+          "Google",
+          "Intuitive Surgical",
+          "DHR",
+          "NVS",
+          "SAP",
+          "Chubb’s",
+          "Lockheed",
+          "LMT",
+          "Northrop Grumman (",
+          "NOC",
+          "Raytheon Technologies",
+          "Pentagon",
+          "TwitterandInstagram"
+        ],
+        "CARDINAL": [
+          "1,017",
+          "1,035",
+          "60",
+          "three"
         ],
         "PERCENT": [
-          "53%",
-          "about 12%",
+          "2.7%",
+          "2.5%",
+          "nearly 2.8%",
+          "over 9%",
+          "1.2%",
+          "5%",
+          "12.5%",
+          "9%",
+          "almost 5%",
+          "over 5%",
           "6%",
-          "36%",
-          "90%"
+          "just over 2%",
+          "10%",
+          "145%",
+          "3%",
+          "almost 10%",
+          "0.4%",
+          "2.8%",
+          "3.3%",
+          "1.8%",
+          "37%",
+          "25%",
+          "16%",
+          "more than 6%",
+          "about 36%",
+          "more than 2%"
+        ],
+        "TIME": [
+          "overnight",
+          "late afternoon",
+          "afternoon"
+        ],
+        "MONEY": [
+          "3,383",
+          "4,000",
+          "90,000",
+          "up to $850 million",
+          "3,439",
+          "above $3,500",
+          "$8 billion",
+          "$4 billion",
+          "Q1 miss"
+        ],
+        "PERSON": [
+          "Bitcoin",
+          "Scott Bessent",
+          "Scott Bessentreportedly",
+          "Trump",
+          "Donald",
+          "Donald Trump",
+          "Jerome Powell",
+          "Kobeissi Letter",
+          "Cybertruck",
+          "Optimus",
+          "Alphabet",
+          "Beyond Tesla",
+          "Danaher",
+          "Novartis",
+          "Martin"
         ],
         "ORDINAL": [
-          "third",
           "first"
         ],
         "PRODUCT": [
-          "Waymo",
-          "Model Y"
+          "B-21",
+          "Model Y",
+          "Chrome"
         ],
         "NORP": [
           "Chinese"
         ]
       },
       "keywords": [
-        "Tesla",
-        "Elon Musk",
-        "Wall Street",
-        "Musk",
-        "stock",
-        "company",
-        "Tesla shares",
-        "powers Wall",
-        "Tesla stock",
-        "Bloomberg"
+        "Tuesday",
+        "dramatic comeback",
+        "softer stance",
+        "tariffs",
+        "Treasury Secretary",
+        "tariff",
+        "Secretary Scott",
+        "stocks",
+        "Trump",
+        "market"
       ],
-      "condensed_text": "Title: Tesla at Risk of a ‘Throwaway Year’ Without a New Narrative From Earnings\n\nKey information: Most Read from Bloomberg DOGE Visits National Gallery of Art to Discuss Museum’s Legal Status Trump Gives New York ‘One Last Chance’ to End Congestion Fee Trump Administration Takes Over New York Penn Station Revamp The Racial Wealth Gap Is Not Just About Money Nashville’s $3 Billion Transit Plan Brings a Call for Zoning Reform This year is off to a dismal start as Musk’s political entanglements have pushed Tesla’s sales to a nearly three-year low in the first three months, leading a slew of Wall Street analysts to slash their growth expectations. Analysts have been dialing back their estimates sharply over the past month, with profit expectations falling by about 12% and revenue forecasts down over 6%. The automaker’s souring outlook and towering valuation has spooked investors, leading to a 53% plunge in Tesla’s stock price since it hit a record in December. “Tesla’s stock is stuck in an information air pocket as Elon Musk focused on his DOGE work, while their car sales skid and political headwinds build in important markets.” Shoring up investor confidence will largely depend on whether Musk starts to step away from his involvement with the Trump administration and the Department of Government Efficiency. Earnings for the first quarter are expected to fall from the prior-year level and revenue is estimated to stay flat when the company reports results after markets close on Tuesday, according to data compiled by Bloomberg. However, Munster also expects this to be the year that “sets the stage for a major rebound in 2026 and beyond.” Tesla shares have slumped this year with concerns swirling about the damage that Musk’s political activities have done to the company’s brand — and sales — adding to wider investor anxiety about economic growth and US trade policy. The 36% drop in the share price from January through March was the third-largest quarterly decline since the company’s 2010 public listing. Still, many investors and analysts remain worried about the slowing pace of the company’s core electric-car making business, which brought in 90% of its revenue last year. “Tesla faces questions on increasingly weaker fundamentals,” said Dan Levy, analyst at Barclays, noting that the company’s profit margin from the core auto business is expected to reach a new low, and after a soft start it may be increasingly difficult to see sales volume rising this year. “Musk needs to bring the voltage on this earnings call to get the stock out of stall speed,” said Dave Mazza, chief executive officer of Roundhill Investments, who owns the stock.\n\nNamed entities:\n- PERSON: Bloomberg, Elon Musk, Musk, Dave Mazza, Trump\n- ORG: Tesla Inc., National Gallery of Art to Discuss Museum’s Legal Status, Tesla, Roundhill Investments, DOGE\n- DATE: Tuesday, months, This year, three-year, the first three months\n- GPE: New York ‘, New York Penn Station Revamp, US, Los Angeles, Austin\n- MONEY: $3 Billion\n- PERCENT: 53%, about 12%, 6%, 36%, 90%\nKeywords: Tesla, Elon Musk, Wall Street, Musk, stock, company, Tesla shares, powers Wall, Tesla stock, Bloomberg\n",
-      "summary": "The processed news information suggests that Tesla's stock (GOOGL) is likely to move down due to several key factors that could influence its price. Here are some of the key factors:\n\n1. **Slowing sales**: Tesla's sales have declined to a nearly three-year low in the first three months of the year, which has led to a slew of Wall Street analysts slashing their growth expectations.\n2. **Political entanglements**: Elon Musk's involvement with the Trump administration and the Department of Government Efficiency has raised concerns about the company's brand and sales, adding to wider investor anxiety about economic growth and US trade policy.\n3. **Weaker fundamentals**: Tesla's profit margin from its core auto business is expected to reach a new low, and its sales volume may be difficult to rise this year, according to analyst Dan Levy.\n4. **Earnings expectations**: Earnings for the first quarter are expected to fall from the prior-year level, and revenue is estimated to stay flat, which could disappoint investors.\n5. **Valuation**: Tesla's valuation is considered high, which makes it more vulnerable to price declines.\n6. **Lack of new narrative**: The article suggests that Tesla needs a new narrative to regain investor confidence, which may not be forthcoming in the near term.\n7. **Earnings call**: The upcoming earnings call is crucial for Tesla to address these concerns and provide a new narrative to boost investor confidence.\n\nThese factors could contribute to a decline in Tesla's stock price, which has already fallen 53% since hitting a record in December. The article suggests that the company's stock is \"stuck in an information air pocket\" and that Elon Musk needs to \"bring the voltage\" to the earnings call to get the stock out of \"stall speed.\""
+      "condensed_text": "Title: The Dow soars 1,000 points as markets hang on hope for a China trade deal\n\nKey information: Shares of Google (GOOGL) parent Alphabet rose 3% Tuesday. The International Monetary Funddowngraded its global economic growth forecastfor 2025 to 2.8%, a decrease from the previous estimate of 3.3%, citing the impact of widespread tariffs and escalating trade tensions under President Donald Trump. Last week, investors poured $8 billion into gold funds — double the peak weekly inflows seen during the pandemic — pushing the four-week average to $4 billion, according to Bank of America Global Research (BAC). After rising to fresh highs overnight, gold fell 1.2% to $3,383 an ounce, snapping a record-setting streak even as JPMorgan (JPM) analysts said they still see a path to $4,000 an ounce in the months ahead. Meanwhile, Bitcoin popped 5% to break above $90,000 for the first time since March, with some traders viewing crypto as a hedge against ongoing policy whiplash. RTX slid over 9% after warning that tariffs could slash up to $850 million from its 2025 profits. The VIX, Wall Street’s fear gauge, dropped almost 10%, signaling a cooldown in volatility.Gold continued its climb, up 0.4% to $3,439. Gold extended its historic rally overnight, climbing above $3,500 for the first time. Volatility retreated, with the VIX dropping over 9%, and investors rotated out of safe havens. Defense contractors took a hit after earnings reports showed margin compression and rising tariff risks.\n\nNamed entities:\n- GPE: U.S., Netflix, China, Cybercab, Verizon\n- DATE: Tuesday, Russell 2000, the months ahead, March, 2025\n- ORG: Dow, Nasdaq, VIX, JPMorgan, JPM\n- PERCENT: 2.7%, 2.5%, nearly 2.8%, over 9%, 1.2%\n- MONEY: 3,383, 4,000, 90,000, up to $850 million, 3,439\n- PERSON: Bitcoin, Scott Bessent, Scott Bessentreportedly, Trump, Donald\nKeywords: Tuesday, dramatic comeback, softer stance, tariffs, Treasury Secretary, tariff, Secretary Scott, stocks, Trump, market\n",
+      "summary": "Based on the processed news information, here are the key factors that could influence the stock price of GOOGL (Alphabet, parent company of Google):\n\n1. **Trade deal hopes**: The news about the Dow soaring 1,000 points due to hopes for a China trade deal could have a positive impact on GOOGL's stock price. If a trade deal is reached, it could lead to increased economic stability and growth, benefiting companies like Alphabet.\n2. **Global economic growth forecast**: The International Monetary Fund's downgraded global economic growth forecast for 2025 could have a negative impact on GOOGL's stock price. However, if the company is able to adapt to the changing economic landscape and find ways to grow despite the challenges, its stock price might not be significantly affected.\n3. **Investor sentiment**: The fact that investors poured $8 billion into gold funds and the VIX dropped almost 10% suggests that investors are becoming less risk-averse and more optimistic about the market. This could lead to increased demand for GOOGL's stock, driving its price up.\n4. **Cryptocurrency market**: The 5% increase in Bitcoin's value and its breaking above $90,000 for the first time since March could have a positive impact on GOOGL's stock price. As a technology company, Alphabet is well-positioned to benefit from the growing adoption of cryptocurrencies and blockchain technology.\n5. **Company-specific news**: There is no specific company-related news mentioned in the article that could directly impact GOOGL's stock price. However, the company's performance in the technology sector and its ability to adapt to changing market conditions could still influence its stock price.\n\nOverall, the factors mentioned in the article suggest that the stock market is experiencing a positive sentiment shift, driven by hopes for a trade deal and increased optimism about the economy. This could lead to increased demand for GOOGL's stock, driving its price up. However, the company's performance and ability to adapt to changing market conditions will ultimately determine its stock price."
+    },
+    {
+      "title": "Cloud Infrastructure Growth Could Cool This Year Despite AI Excitement, Analyst Says",
+      "url": "https://finance.yahoo.com/m/94e65c5a-4318-347d-b84d-8731823848ae/cloud-infrastructure-growth.html?.tsrc=rss",
+      "date": "Tue, 22 Apr 2025 20:05:21 +0000",
+      "key_sentences": "Amazon stock has been hit by fears about tariffs and e-commerce but analysts are warning about cloud risks as well.",
+      "named_entities": {
+        "ORG": [
+          "Amazon"
+        ]
+      },
+      "keywords": [
+        "Amazon stock",
+        "cloud risks",
+        "Amazon",
+        "stock",
+        "hit",
+        "fears",
+        "tariffs",
+        "e-commerce",
+        "analysts",
+        "warning"
+      ],
+      "condensed_text": "Title: Cloud Infrastructure Growth Could Cool This Year Despite AI Excitement, Analyst Says\n\nKey information: Amazon stock has been hit by fears about tariffs and e-commerce but analysts are warning about cloud risks as well.\n\nNamed entities:\n- ORG: Amazon\nKeywords: Amazon stock, cloud risks, Amazon, stock, hit, fears, tariffs, e-commerce, analysts, warning\n",
+      "summary": "The processed news information suggests that Amazon's cloud infrastructure growth may slow down this year, despite the excitement around AI. This could potentially impact the stock price of GOOGL (Alphabet Inc., the parent company of Google Cloud Platform). Here are some key factors that could influence the stock price:\n\n1. **Cloud competition**: Amazon Web Services (AWS) is a major player in the cloud infrastructure market, and if its growth slows down, it could lead to increased competition from other cloud providers like Google Cloud Platform (GCP). This could impact GOOGL's stock price if investors perceive GCP as a less attractive option.\n2. **Tariffs and e-commerce**: The article mentions that Amazon's stock has been hit by fears about tariffs and e-commerce. If these concerns persist, it could negatively impact GOOGL's stock price, as both companies are heavily reliant on e-commerce and global trade.\n3. **Analyst warnings**: The article quotes analysts warning about cloud risks. If these warnings are seen as credible, it could lead to a decrease in investor confidence in GOOGL's stock, potentially causing the price to drop.\n4. **AI excitement**: The article mentions that there is excitement around AI, which could be a positive factor for GOOGL's stock. If investors perceive AI as a growth area, they may be more likely to invest in GOOGL, which is a leader in AI research and development.\n5. **Cloud infrastructure growth**: The slowdown in cloud infrastructure growth could impact GOOGL's stock price if investors perceive it as a sign of declining demand for cloud services. However, if the slowdown is temporary and the cloud market continues to grow, GOOGL's stock price may not be significantly impacted.\n\nIn conclusion, the processed news information suggests that GOOGL's stock price could be influenced by various factors, including cloud competition, tariffs and e-commerce, analyst warnings, AI excitement, and cloud infrastructure growth. While the slowdown in cloud infrastructure growth could be a negative factor, the excitement around AI and the company's leadership in the field could offset some of the negative impact."
+    },
+    {
+      "title": "Market Chatter: Google Turned Down Opportunity to Add Search Engine to OpenAI Chatbot",
+      "url": "https://finance.yahoo.com/news/market-chatter-google-turned-down-195901621.html?.tsrc=rss",
+      "date": "Tue, 22 Apr 2025 19:59:01 +0000",
+      "key_sentences": "Alphabet's (GOOG) Google last year turned down an offer by OpenAI to include its search engine as pa",
+      "named_entities": {
+        "ORG": [
+          "Alphabet's",
+          "OpenAI"
+        ],
+        "DATE": [
+          "last year"
+        ]
+      },
+      "keywords": [
+        "GOOG",
+        "Alphabet",
+        "Google",
+        "year turned",
+        "search engine",
+        "year",
+        "turned",
+        "offer",
+        "OpenAI",
+        "include"
+      ],
+      "condensed_text": "Title: Market Chatter: Google Turned Down Opportunity to Add Search Engine to OpenAI Chatbot\n\nKey information: Alphabet's (GOOG) Google last year turned down an offer by OpenAI to include its search engine as pa\n\nNamed entities:\n- ORG: Alphabet's, OpenAI\n- DATE: last year\nKeywords: GOOG, Alphabet, Google, year turned, search engine, year, turned, offer, OpenAI, include\n",
+      "summary": "Based on the processed news information, here's an analysis of how it might relate to the stock price movement of GOOGL (Alphabet's Class A stock):\n\n**Positive influence on stock price:**\n\n1. **Google's strategic decision-making**: The fact that Google turned down the offer from OpenAI to include its search engine in the chatbot suggests that the company is being selective and cautious about integrating its technology with other platforms. This could be seen as a positive sign, as it implies that Google is prioritizing its own interests and intellectual property.\n2. **Google's search engine dominance**: By not integrating its search engine with OpenAI's chatbot, Google is maintaining its control over its search engine and keeping it separate from other platforms. This could help to reinforce its position as a dominant player in the search engine market.\n\n**Neutral or no influence on stock price:**\n\n1. **No direct impact on revenue**: The decision to turn down the offer does not seem to have a direct impact on Google's revenue or profitability. Therefore, it may not have a significant effect on the stock price.\n2. **No indication of new partnerships or collaborations**: The news does not suggest any new partnerships or collaborations between Google and OpenAI, which could be a positive or negative factor depending on the context.\n\n**Potential negative influence on stock price:**\n\n1. **Missed opportunity**: Some investors might view the decision to turn down the offer as a missed opportunity for Google to expand its presence in the AI and chatbot space. This could lead to a negative reaction in the stock price if investors perceive the company as being too conservative or slow to adapt to changing market trends.\n2. **Competition from other search engines**: If OpenAI's chatbot becomes a major success and integrates with other search engines, it could potentially erode Google's market share and lead to a decline in the stock price.\n\nOverall, the news about Google turning down the offer to include its search engine in OpenAI's chatbot is likely to have a neutral or slightly positive effect on the stock price, as it suggests that the company is making strategic decisions to protect its interests and maintain its dominance in the search engine market."
     }
   ],
-  "daily_change_percentage": -2.308815433059484,
-  "date_generated": "2025-04-22T12:43:29.952392+00:00"
+  "daily_change_percentage": 2.573307441509094,
+  "date_generated": "2025-04-22T21:15:13.105678+00:00"
 }
