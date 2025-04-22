@@ -3,15 +3,63 @@ from datetime import datetime, timezone
 import logging
 import time
 import json
-from pathlib import Path
+import os
+import sys
 
-# Import from other modules using absolute imports
-from NLPStock.data_fetchers.article_extractor import extract_article_text
-from NLPStock.nlp_processing.nlp_processor import process_articles_batch
-from NLPStock.utils.file_operations import ensure_directory, load_json, save_json
-from NLPStock.summarization.summarize import summarize_article, summarize_articles
+# Add project root to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Use relative imports
+from data_fetchers.article_extractor import extract_article_text
+from nlp_processing.nlp_processor import process_articles_batch
+from utils.file_operations import ensure_directory, load_json, save_json
+from summarization.llm_client import LLMClient
 
 logger = logging.getLogger(__name__)
+
+# Create a simple LLM client that generates a default summary
+def summarize_article(article_text, symbol, direction):
+    """Summarize a single article about a stock"""
+    if not article_text or article_text == "Full article text not found.":
+        return None
+    
+    client = LLMClient()
+    
+    prompt = f"""
+    Analyze this processed news information about {symbol} stock and explain how it might relate to the stock moving {direction}. 
+    Focus on key factors that could influence stock price.
+    
+    Processed information: {article_text}
+    """
+    
+    try:
+        return client.generate(prompt)
+    except Exception as e:
+        logger.error(f"Error summarizing article: {e}")
+        return None
+
+def summarize_articles(article_summaries, symbol):
+    """Combine multiple article summaries into a single explanation"""
+    if not article_summaries:
+        return "No valid articles found to summarize."
+    
+    valid_summaries = [summary for summary in article_summaries if summary]
+    if not valid_summaries:
+        return "No valid summaries to combine."
+    
+    client = LLMClient()
+    
+    prompt = f"""
+    Based on these news summaries about {symbol}, provide a concise explanation of why the stock might be moving:
+    
+    {' '.join(valid_summaries)}
+    """
+    
+    try:
+        return client.generate(prompt)
+    except Exception as e:
+        logger.error(f"Error combining summaries: {e}")
+        return "Unable to generate summary due to an error."
 
 def get_news_articles(symbol: str):
     """Get news articles for the specified stock from local JSON files."""

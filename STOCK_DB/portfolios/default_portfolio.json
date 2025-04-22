@@ -1,0 +1,19 @@
+{
+  "stocks": [
+    {
+      "symbol": "AAPL"
+    },
+    {
+      "symbol": "MSFT"
+    },
+    {
+      "symbol": "GOOGL"
+    },
+    {
+      "symbol": "AMZN"
+    },
+    {
+      "symbol": "META"
+    }
+  ]
+}
