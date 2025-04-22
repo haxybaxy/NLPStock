@@ -4,6 +4,7 @@ from dateutil import parser
 from dateutil.parser import parse as date_parse
 from yahoo_fin import news
 import requests
+import time
 
 
 def extract_article_text(article_url):
@@ -83,24 +84,51 @@ def fetch_news_data_globe(symbol):
 
 def get_article_details_yahoo(article_url):
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+        'Cache-Control': 'max-age=0'
     }
 
-    response = requests.get(article_url, headers=headers)
+    # Add retry logic with exponential backoff
+    max_retries = 3
+    retry_delay = 2  # Start with 2 seconds
+    
+    for attempt in range(max_retries):
+        try:
+            response = requests.get(article_url, headers=headers, timeout=10)
+            
+            # If we get rate limited, wait and retry
+            if response.status_code == 429:
+                if attempt < max_retries - 1:  # Don't sleep on the last attempt
+                    sleep_time = retry_delay * (2 ** attempt)  # Exponential backoff
+                    print(f"Rate limited (429). Waiting {sleep_time} seconds before retry {attempt+1}/{max_retries}")
+                    time.sleep(sleep_time)
+                    continue
+            
+            response.raise_for_status()  # Raise exception for other error codes
+            
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.text, 'html.parser')
 
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.text, "html.parser")
+                pub_date_tag = soup.find('time')
+                pub_date = pub_date_tag['datetime'] if pub_date_tag else "No publication date found"
 
-        pub_date_tag = soup.find("time")
-        pub_date = pub_date_tag["datetime"] if pub_date_tag else "No publication date found"
+                content_tag = soup.find('div', class_='caas-body')
+                content = content_tag.text if content_tag else "No content found"
 
-        content_tag = soup.find("div", class_="caas-body")
-        content = content_tag.text if content_tag else "No content found"
-
-        return pub_date, content
-    else:
-        print(f"Failed to retrieve the article. Status code: {response.status_code}")
-        return "No publication date found", "No content found"
+                return pub_date, content
+        except requests.exceptions.RequestException as e:
+            if attempt < max_retries - 1:  # Don't sleep on the last attempt
+                sleep_time = retry_delay * (2 ** attempt)
+                print(f"Request error: {e}. Waiting {sleep_time} seconds before retry {attempt+1}/{max_retries}")
+                time.sleep(sleep_time)
+            else:
+                print(f"Failed to retrieve the article after {max_retries} attempts: {e}")
+    
+    return "No publication date found", "No content found"
 
 
 def fetch_news_data_yahoo(symbol):
@@ -109,7 +137,7 @@ def fetch_news_data_yahoo(symbol):
     one_month_ago = current_date - timedelta(days=30)
     filtered_articles = []
 
-    for article in articles:
+    for i, article in enumerate(articles):
         pub_date = article["published"]
         article_date = date_parse(pub_date).replace(tzinfo=timezone.utc)
 
@@ -117,6 +145,11 @@ def fetch_news_data_yahoo(symbol):
             continue
         headline = article["title"]
         url = article["link"]
+        
+        # Add a delay between requests to avoid rate limiting
+        if i > 0:  # Don't delay before the first request
+            time.sleep(2)  # Wait 2 seconds between requests
+            
         pub_date, content = get_article_details_yahoo(url)
 
         filtered_articles.append(

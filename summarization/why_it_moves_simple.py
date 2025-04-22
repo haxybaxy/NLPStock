@@ -90,7 +90,7 @@ def process_company_data(symbol: str, exchange: str, news_articles: List[Dict], 
             "summary": f"There are no news currently affecting the stock price, fluctuations might be due to market conditions.",
         }
 
-    # Extract article text for articles that don't have it yet
+    # Count articles with text and extract text for those without it
     articles_with_text = 0
     for article in news_articles:
         # Check if the article already has the full text
