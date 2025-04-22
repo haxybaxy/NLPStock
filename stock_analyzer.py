@@ -7,11 +7,6 @@ from typing import Dict, List, Optional
 import json
 from datetime import datetime
 
-# Add paths to import system
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from setup_paths import setup_paths
-setup_paths()
-
 # Set up logging
 logging.basicConfig(
     level=logging.INFO,
