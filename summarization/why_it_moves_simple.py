@@ -4,14 +4,61 @@ import logging
 import time
 import json
 from pathlib import Path
+import sys
+import os
 
-# Import from other modules using direct imports
-from ..data_fetchers.article_extractor import extract_article_text
-from ..nlp_processing.nlp_processor import process_articles_batch
-from ..utils.file_operations import ensure_directory, load_json, save_json
-from .summarize import summarize_article, summarize_articles
+# Fix imports to be relative
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from data_fetchers.article_extractor import extract_article_text
+from nlp_processing.nlp_processor import process_articles_batch
+from utils.file_operations import ensure_directory, load_json, save_json
+from summarization.llm_client import LLMClient
 
 logger = logging.getLogger(__name__)
+
+# Create a simple LLM client that generates a default summary
+def summarize_article(article_text, symbol, direction):
+    """Summarize a single article about a stock"""
+    if not article_text or article_text == "Full article text not found.":
+        return None
+    
+    client = LLMClient()
+    
+    prompt = f"""
+    Analyze this processed news information about {symbol} stock and explain how it might relate to the stock moving {direction}. 
+    Focus on key factors that could influence stock price.
+    
+    Processed information: {article_text}
+    """
+    
+    try:
+        return client.generate(prompt)
+    except Exception as e:
+        logger.error(f"Error summarizing article: {e}")
+        return None
+
+def summarize_articles(article_summaries, symbol):
+    """Combine multiple article summaries into a single explanation"""
+    if not article_summaries:
+        return "No valid articles found to summarize."
+    
+    valid_summaries = [summary for summary in article_summaries if summary]
+    if not valid_summaries:
+        return "No valid summaries to combine."
+    
+    client = LLMClient()
+    
+    prompt = f"""
+    Based on these news summaries about {symbol}, provide a concise explanation of why the stock might be moving:
+    
+    {' '.join(valid_summaries)}
+    """
+    
+    try:
+        return client.generate(prompt)
+    except Exception as e:
+        logger.error(f"Error combining summaries: {e}")
+        return "Unable to generate summary due to an error."
 
 def get_news_articles(symbol: str):
     """Get news articles for the specified stock from local JSON files."""
@@ -46,14 +93,14 @@ def process_company_data(symbol: str, exchange: str, news_articles: List[Dict], 
     # Count articles with text and extract text for those without it
     articles_with_text = 0
     for article in news_articles:
-        # Check if article already has text
-        if "full_article_text" in article and article["full_article_text"] and article["full_article_text"] != "Full article text not found.":
+        # Check if the article already has the full text
+        if "full_article_text" in article and article["full_article_text"] != "Full article text not found.":
             articles_with_text += 1
             continue
             
-        # If not, try to extract it
-        url = article.get("url", article.get("link", ""))
-        if url:
+        # Try fetching the article content if not already present
+        url = article.get("url", "")
+        if url and "full_article_text" not in article:
             full_article_text = extract_article_text(url)
             article["full_article_text"] = full_article_text
             if full_article_text != "Full article text not found.":
@@ -79,7 +126,10 @@ def process_company_data(symbol: str, exchange: str, news_articles: List[Dict], 
             print(f"PROCESSED TEXT AFTER NLP FOR {symbol}:")
             print("="*80)
             
+            # Save processed articles data for future reference
+            processed_data = []
             summaries = []
+
             for i, article in enumerate(processed_articles):
                 # Print the condensed text
                 condensed_text = article.get('condensed_text', '')
@@ -89,25 +139,54 @@ def process_company_data(symbol: str, exchange: str, news_articles: List[Dict], 
                     print(condensed_text)
                     print("-" * 40)
                     
+                    # Save all the processed information
+                    article_data = {
+                        "title": article.get('title', 'No title'),
+                        "url": article.get('url', ''),
+                        "date": article.get('date', ''),
+                        "key_sentences": article.get('key_sentences', ''),
+                        "named_entities": article.get('named_entities', {}),
+                        "keywords": article.get('keywords', []),
+                        "condensed_text": condensed_text
+                    }
+                    processed_data.append(article_data)
+                    
                     # Generate summary
                     summary = summarize_article(condensed_text, symbol, direction)
                     if summary:
                         summaries.append(summary)
+                        # Store the summary with the article data
+                        article_data["summary"] = summary
                     time.sleep(2)  # 2-second delay between summary requests
 
             summaries = [s for s in summaries if s]
             if not summaries:
                 logger.info(f"No valid summaries generated for {symbol}")
-                return {
+                result = {
                     "symbol": symbol,
                     "exchange": exchange,
                     "type": classification,
                     "period": "day",
                     "summary": "No valid article summaries could be generated.",
+                    "processed_articles": processed_data
                 }
-                
-            explanation = summarize_articles(summaries, symbol)
-            return {"symbol": symbol, "exchange": exchange, "type": classification, "summary": explanation}
+            else:
+                explanation = summarize_articles(summaries, symbol)
+                result = {
+                    "symbol": symbol, 
+                    "exchange": exchange, 
+                    "type": classification, 
+                    "summary": explanation,
+                    "processed_articles": processed_data
+                }
+
+            # Save the NLP processed data to a separate file
+            output_dir = ensure_directory("STOCK_DB/nlp_data")
+            output_file = Path(output_dir) / f"{symbol}_nlp_data.json"
+            save_json(processed_data, output_file)
+            logger.info(f"NLP data for {symbol} saved to {output_file}")
+            
+            return result
         except Exception as e:
             logger.error(f"Error summarizing articles for {symbol}: {e}")
             return {
@@ -128,13 +207,26 @@ def classify_company(net_change_percentage: float):
 def why_it_moves(symbol: str, exchange: str, daily_change_percentage: float):
     """Generate a summary of why a stock is moving and save it locally."""
     classification = classify_company(daily_change_percentage)
-
-    news_articles = get_news_articles(symbol)
-    summary = {
-        **process_company_data(symbol, exchange, news_articles, classification),
-        "daily_change_percentage": daily_change_percentage,
-        "date_generated": datetime.now(timezone.utc).isoformat(),
-    }
+    
+    # When there's no news data, create a default summary
+    if not Path(f"STOCK_DB/news/{symbol}_news.json").exists():
+        summary = {
+            "symbol": symbol,
+            "exchange": exchange,
+            "type": classification,
+            "period": "day",
+            "summary": f"No news data available for {symbol}. The stock's movement of {daily_change_percentage:.2f}% may be related to market conditions or unreported news.",
+            "daily_change_percentage": daily_change_percentage,
+            "date_generated": datetime.now(timezone.utc).isoformat(),
+        }
+    else:
+        news_articles = get_news_articles(symbol)
+        result = process_company_data(symbol, exchange, news_articles, classification)
+        summary = {
+            **result,
+            "daily_change_percentage": daily_change_percentage,
+            "date_generated": datetime.now(timezone.utc).isoformat(),
+        }
 
     # Save the summary to a local file
     output_dir = ensure_directory("STOCK_DB/movers")

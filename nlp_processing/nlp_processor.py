@@ -1,21 +1,31 @@
 import logging
-from NLPStock.nlp_processing.text_preprocessing import extract_key_sentences
-from NLPStock.nlp_processing.entity_extraction import extract_named_entities
-from NLPStock.nlp_processing.keyword_extraction import extract_keywords
+import os
+import sys
+
+# Add project root to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Use relative imports
+from nlp_processing.text_preprocessing import extract_key_sentences
+from nlp_processing.entity_extraction import extract_named_entities
+from nlp_processing.keyword_extraction import extract_keywords
 
 logger = logging.getLogger(__name__)
 
 def process_article(article, company_name, ticker):
     """Process an article to extract key information"""
     if not article:
+        logger.warning("Empty article passed to process_article")
         return None
     
-    # Get the full article text if not already present
-    if 'full_article_text' not in article or not article['full_article_text']:
-        return None
+    # Get the full article text
+    text = article.get('full_article_text')
     
-    text = article['full_article_text']
-    if text == "Full article text not found." or not text:
+    # Log the fields in the article for debugging
+    logger.debug(f"Article fields: {list(article.keys())}")
+    
+    if not text or text == "Full article text not found.":
+        logger.warning(f"Missing or invalid article text for article with title: {article.get('title', 'No title')}")
         return None
     
     # Extract key information
@@ -55,4 +65,5 @@ def process_articles_batch(articles, company_name, ticker):
         if processed:
             processed_articles.append(processed)
     
+    logger.info(f"Processed {len(processed_articles)} articles out of {len(articles)} for {company_name} ({ticker})")
     return processed_articles 

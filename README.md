@@ -1,112 +1,149 @@
-# NLPStock: Stock Movement Analysis with NLP
+# NLPStock: Stock Movement Analysis with NLP and LLMs
 
-NLPStock is a comprehensive tool that analyzes news articles to explain stock price movements. It fetches financial news from various sources, processes the text using Natural Language Processing (NLP) techniques, and generates explanations for why stocks are moving up or down.
+NLPStock is a powerful tool that combines financial data with natural language processing and LLMs to analyze stock movements and generate insightful explanations.
 
 ## Features
 
-- **Multi-Source News Fetching**: Collects news from US, European, Nordic, and Baltic sources
-- **Advanced NLP Processing**: Extracts key sentences, named entities, and keywords from articles
-- **LLM-Powered Summarization**: Uses Groq's LLama 3 model to generate insightful explanations
-- **Modular Architecture**: Clean separation between data fetching, NLP processing, and summarization
-
-## Directory Structure 
-
-NLPStock/
-├── data_fetchers/ # Fetch news from various sources
-├── nlp_processing/ # Process news articles
-├── summarization/ # Summarize news articles
-└── utils/ # Utility functions
-└── STOCK_DB/ # Stock data and news articles
-├── run.py # Main entry point
-└── requirements.txt # Dependencies
+- **Portfolio Management**: Track stocks in your personalized portfolio
+- **Automated Data Fetching**: Get real-time stock data using yfinance
+- **Movement Detection**: Identify stocks with significant price movements
+- **AI-Powered Analysis**: Generate explanations for why stocks are moving using news data and LLMs
+- **Streamlit Dashboard**: Interactive UI for monitoring and analyzing your portfolio
 
 ## Installation
 
-1. Clone the repository:
-git clone https://github.com/evaks1/NLPStock.git
+1. Clone this repository:
+```bash
+git clone <repository-url>
 cd NLPStock
+```
 
-2. Install dependencies:
-pip install -r requirements.txt
+2. Make sure you have the following prerequisites installed:
+   - Python 3.8 or higher
+   - make (standard on macOS)
+   - pip
 
-3. Create and activate virtual environment:
-python -m venv venv
-source venv/bin/activate # Linux/Mac
-venv\Scripts\activate # Windows
+3. Add your Groq API key to the `.env` file:
+```
+GROQ_API_KEY = "your-api-key-here"
+```
 
-4. Create a `.env` file in the root directory with your API keys:
-GROQ_API_KEY=your_groq_api_key
-ALPHA_VANTAGE_API_KEY=your_alpha_vantage_api_key
+4. Use the Makefile to set up and run the project:
+```bash
+# Install dependencies and set up the environment
+make setup
+
+# Initialize your portfolio with some default stocks
+make init-portfolio
+```
+
 ## Usage
 
-1. Fetch news for a specific stock:
-python run.py --symbol AAPL --exchange US --change 1.5 --fetch-news
+### Using the Makefile (Recommended for macOS)
 
-2. Fetch news for multiple stocks from a file:
-python run.py --symbols-file symbols.txt --exchanges-file exchanges.txt --fetch-news
+The project includes a Makefile that simplifies common operations:
 
-3. Process all stocks in the database:
-python run.py --all
+```bash
+# Start the Streamlit app
+make run
 
-Where `symbols.txt` contains one symbol per line and `exchanges.txt` contains the corresponding exchanges.
+# Run the stock analysis
+make analyze
 
-## Command Line Arguments
+# Fetch latest stock data for your portfolio
+make fetch
 
-- `--symbol`: Stock symbol to analyze (e.g., AAPL, MSFT)
-- `--exchange`: Stock exchange (default: US)
-- `--change`: Daily change percentage (default: 0.01)
-- `--all`: Process all stocks with news data
-- `--fetch-news`: Fetch news before analysis
-- `--symbols-file`: Path to a file containing symbols to fetch news for
-- `--exchanges-file`: Path to a file containing exchanges for the symbols
+# Add a new stock to your portfolio
+make add-stock
 
-## Example Output
+# Run diagnostics if you're having issues
+make debug
 
-For each stock, the script will:
-1. Fetch news articles
-2. Process the articles to extract key information
-3. Generate an explanation for the stock movement
-4. Save the results to the database
+# See all available commands
+make help
+```
 
-## How It Works
+### Running the Streamlit App Directly
 
-1. **News Fetching**: The system fetches recent news articles about the specified stock from various financial news sources.
+```bash
+# Activate the virtual environment first
+source venv/bin/activate
 
-2. **Text Processing**: Articles are processed using NLP techniques to:
-   - Extract key sentences relevant to stock movement
-   - Identify named entities (companies, people, locations)
-   - Extract important keywords and financial terms
+# Then run Streamlit
+streamlit run app.py
+```
 
-3. **Summarization**: The processed text is sent to an LLM (Groq's LLama 3) which generates a concise explanation of why the stock is moving.
+## Working with Your Portfolio
 
-4. **Classification**: Based on the price change, the stock is classified as a "gainer" or "loser", and the summary is tailored accordingly.
+1. Start by initializing your portfolio with some default stocks:
+```bash
+make init-portfolio
+```
 
-## Requirements
+2. Add more stocks as needed:
+```bash
+make add-stock
+# When prompted, enter the ticker symbol (e.g., AAPL, MSFT)
+```
 
-- Python 3.8+
-- NLTK
-- spaCy
-- Groq API access
-- BeautifulSoup4
-- Requests
+3. Update stock data:
+```bash
+make fetch
+```
+
+4. Analyze moving stocks:
+```bash
+make analyze
+```
+
+5. View the analysis in the Streamlit app:
+```bash
+make run
+```
+
+## Project Structure
+
+- `app.py` - Streamlit web application
+- `stock_analyzer.py` - Main analysis coordinator
+- `data_fetchers/` - Scripts for fetching stock and news data
+  - `stock_price_fetcher.py` - yfinance integration for stock data
+  - `fetch_news.py` - News data collection
+- `nlp_processing/` - NLP components
+  - `text_preprocessing.py` - Clean and prepare text
+  - `entity_extraction.py` - Extract entities from text
+- `summarization/` - LLM integration
+  - `llm_client.py` - Groq API client
+  - `why_it_moves.py` - Generate stock movement explanations
+- `utils/` - Helper utilities
+  - `portfolio_manager.py` - Portfolio data management
+  - `file_operations.py` - File handling utilities
+- `STOCK_DB/` - Data storage directory
+
+## Troubleshooting
+
+If you encounter issues:
+
+1. Run the diagnostics:
+```bash
+make debug
+```
+
+2. Check that your Groq API key is set correctly in the `.env` file
+
+3. Make sure all dependencies are installed:
+```bash
+make setup
+```
+
+4. If imports are failing, try:
+```bash
+python setup_paths.py
+```
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- [NLTK](https://www.nltk.org/) for natural language processing
-- [spaCy](https://spacy.io/) for named entity recognition
-- [Groq](https://groq.com/) for LLM API access
-- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) for web scraping
+This project is licensed under the MIT License - see the LICENSE file for details. 

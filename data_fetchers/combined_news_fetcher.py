@@ -1,20 +1,22 @@
 import logging
 import os
+import sys
 import time
 from pathlib import Path
 from dotenv import load_dotenv
 
+# Add project root to path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 # Load environment variables
 load_dotenv()
 
-# Import all existing fetchers with correct function names
-from .fetch_us_news_data import fetch_us_news
-from .fetch_european_news import fetch_european_news
-# Fix the imports for Nordic and Baltic news
-from .fetch_nordic_news import fetch_news_for_company as fetch_nordic_news
-from .fetch_baltic_news import fetch_news_for_company as fetch_baltic_news
-from ..utils.file_operations import ensure_directory, save_json
-from .fetch_alpha_vantage_news import fetch_alpha_vantage_news
+# Import all existing fetchers
+from data_fetchers.fetch_us_news_data import fetch_us_news
+from data_fetchers.fetch_european_news import fetch_european_news
+from data_fetchers.fetch_nordic_news import fetch_nordic_news
+from data_fetchers.fetch_baltic_news import fetch_baltic_news
+from utils.file_operations import ensure_directory, save_json
 
 logger = logging.getLogger(__name__)
 

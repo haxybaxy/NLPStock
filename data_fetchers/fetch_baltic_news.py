@@ -2,7 +2,9 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlencode
 import json
 import requests
+import logging
 
+logger = logging.getLogger(__name__)
 
 def fetch_article_content(url):
     response = requests.get(url)
@@ -51,30 +53,50 @@ def fetch_news_for_company(company_name, gcfIssuerId):
                     publication_date = item.get("published", "No publication date found")
                     article_content = fetch_article_content(message_url)
                     if "error" in article_content:
-                        print(article_content["error"])
+                        logger.warning(article_content["error"])
                     else:
                         news_data.append(
                             {
                                 "Company": company_name,
                                 "title": title,
-                                "Message URL": message_url,
-                                "Content": article_content["content"],
+                                "url": message_url,
+                                "full_article_text": article_content["content"],
                                 "date": publication_date,
                             }
                         )
                 return news_data
             else:
-                print(f"No news items found for {company_name}")
+                logger.warning(f"No news items found for {company_name}")
                 return []
         else:
-            print(f"Failed to fetch data for {company_name}. Status code: {response.status_code}")
+            logger.warning(f"Failed to fetch data for {company_name}. Status code: {response.status_code}")
             return []
     except requests.RequestException as e:
-        print(f"RequestException: Error fetching data for {company_name}: {e}")
+        logger.error(f"RequestException: Error fetching data for {company_name}: {e}")
         return []
     except json.JSONDecodeError as e:
-        print(f"JSONDecodeError: Error decoding JSON for {company_name}: {e}")
+        logger.error(f"JSONDecodeError: Error decoding JSON for {company_name}: {e}")
         return []
     except Exception as e:
-        print(f"Exception: Error fetching data for {company_name}: {e}")
+        logger.error(f"Exception: Error fetching data for {company_name}: {e}")
+        return []
+
+def fetch_baltic_news(symbol):
+    """
+    Fetch news for a Baltic stock symbol.
+    
+    This is a simplified version that assumes we may not have the gcfIssuerId.
+    In a real implementation, you would look up the gcfIssuerId for the symbol.
+    """
+    try:
+        logger.info(f"Fetching Baltic news for {symbol}")
+        
+        # In real implementation, fetch the gcfIssuerId for the symbol
+        # For now, use a default approach
+        company_name = symbol
+        gcfIssuerId = f"{symbol.upper()}"  # Simplified ID, in reality would be looked up
+        
+        return fetch_news_for_company(company_name, gcfIssuerId)
+    except Exception as e:
+        logger.error(f"Error fetching Baltic news for {symbol}: {e}")
         return []

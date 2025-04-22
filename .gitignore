@@ -1,4 +1,10 @@
-.env
 venv/
-venv_py311/
-STOCK_DB/
+__pycache__/
+.env
+*.log
+*.log.*
+*.log.*.*
+*.log.*.*.*
+*.log.*.*.*.*
+*.log.*.*.*.*.*
+*.log.*.*.*.*.*.*
