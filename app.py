@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 import logging
 import random
+import re
 
 # Set up logging
 logging.basicConfig(
@@ -620,9 +621,37 @@ else:
                     
                     # Display summary in an expander
                     with st.expander("📝 Summary of Why It's Moving", expanded=True):
+                        # Clean up any HTML artifacts that might be in the summary
+                        cleaned_summary = summary
+                        # Remove any HTML tags
+                        cleaned_summary = re.sub(r'<[^>]*>', '', cleaned_summary)
+                        # Remove unwanted div tags
+                        cleaned_summary = re.sub(r'</div>', '', cleaned_summary)
+                        
+                        # Format the summary with proper markdown
+                        # If the summary already has bullet points, make sure they're properly formatted
+                        if '-' in cleaned_summary:
+                            # Split by lines
+                            lines = cleaned_summary.split('\n')
+                            formatted_lines = []
+                            
+                            for line in lines:
+                                # Keep header lines as they are
+                                if 'Key factors driving' in line:
+                                    formatted_lines.append(f"**{line.strip()}**")
+                                # Format bullet points with proper spacing
+                                elif line.strip().startswith('-'):
+                                    formatted_lines.append(line.strip())
+                                # Any other lines
+                                elif line.strip():
+                                    formatted_lines.append(line.strip())
+                            
+                            # Reconstruct with proper newlines for markdown
+                            cleaned_summary = '\n'.join(formatted_lines)
+                        
                         st.markdown(f"""
                         <div style="background-color: #F0F2F6; padding: 15px; border-radius: 10px; border-left: 5px solid {color};">
-                            {summary}
+                            {cleaned_summary}
                         </div>
                         """, unsafe_allow_html=True)
                     

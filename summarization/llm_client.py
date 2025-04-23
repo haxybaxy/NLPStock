@@ -14,18 +14,16 @@ load_dotenv()
 # Default model - using bart-large-cnn for better summarization
 DEFAULT_MODEL = "facebook/bart-large-cnn"
 
-# Templates for stock-specific summaries
-STOCK_UP_TEMPLATE = """
+# Templates for stock-specific summaries with headers
+STOCK_UP_TEMPLATE = """Key factors driving {symbol}'s stock price increase:
 - {point1}
 - {point2}
-- {point3}
-"""
+- {point3}"""
 
-STOCK_DOWN_TEMPLATE = """
+STOCK_DOWN_TEMPLATE = """Key factors driving {symbol}'s stock price decrease:
 - {point1}
 - {point2}
-- {point3}
-"""
+- {point3}"""
 
 class LLMClient:
     def __init__(self, model=DEFAULT_MODEL):
@@ -297,20 +295,39 @@ class LLMClient:
             else:
                 points.append(generic_down_points[len(points) % 3])
         
-        # Format using appropriate template - take only up to 3 most relevant points
+        # Only take up to 3 points, ensuring no duplicates
+        unique_points = []
+        for point in points:
+            if not any(self._is_similar_sentence(point, existing) for existing in unique_points):
+                unique_points.append(point)
+                if len(unique_points) >= 3:
+                    break
+                    
+        # If we still don't have enough unique points, add generic ones
+        while len(unique_points) < 3:
+            if stock_info["direction"] == "up":
+                generic_point = generic_up_points[len(unique_points) % 3]
+                if not any(self._is_similar_sentence(generic_point, existing) for existing in unique_points):
+                    unique_points.append(generic_point)
+            else:
+                generic_point = generic_down_points[len(unique_points) % 3]
+                if not any(self._is_similar_sentence(generic_point, existing) for existing in unique_points):
+                    unique_points.append(generic_point)
+        
+        # Format using appropriate template
         if stock_info["direction"] == "up":
             return STOCK_UP_TEMPLATE.format(
                 symbol=stock_info["symbol"] if stock_info["symbol"] else "the stock",
-                point1=points[0],
-                point2=points[1],
-                point3=points[2]
+                point1=unique_points[0],
+                point2=unique_points[1],
+                point3=unique_points[2]
             )
         else:
             return STOCK_DOWN_TEMPLATE.format(
                 symbol=stock_info["symbol"] if stock_info["symbol"] else "the stock",
-                point1=points[0],
-                point2=points[1],
-                point3=points[2]
+                point1=unique_points[0],
+                point2=unique_points[1],
+                point3=unique_points[2]
             )
     
     def _is_promotional(self, sentence):
@@ -345,7 +362,8 @@ class LLMClient:
             r"the stock.*affected",
             r"the following.*factors",
             r"key factors.*stock",
-            r"these are.*factors"
+            r"these are.*factors",
+            r"list the.*factors"
         ]
         
         sentence = sentence.lower()
