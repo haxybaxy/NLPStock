@@ -731,7 +731,7 @@ st.markdown("---")
 st.markdown(
     """
     <div style="text-align: center;">
-        <p>NLPStock Analyzer | Powered by Groq LLM | Streamlit UI</p>
+        <p>NLPStock Analyzer | Powered by Transformers | Streamlit UI</p>
         <p style="font-size: 12px; color: #666;">Last updated: April 2025</p>
     </div>
     """, 
