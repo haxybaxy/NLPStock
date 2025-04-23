@@ -636,12 +636,16 @@ else:
                             formatted_lines = []
                             
                             for line in lines:
-                                # Keep header lines as they are
+                                # Keep header lines as they are and make them bold
                                 if 'Key factors driving' in line:
                                     formatted_lines.append(f"**{line.strip()}**")
-                                # Format bullet points with proper spacing
+                                # Format bullet points with proper spacing for markdown
                                 elif line.strip().startswith('-'):
-                                    formatted_lines.append(line.strip())
+                                    # Ensure there's proper markdown spacing
+                                    formatted_line = line.strip()
+                                    if not formatted_line.startswith('- ') and formatted_line.startswith('-'):
+                                        formatted_line = '- ' + formatted_line[1:].strip()
+                                    formatted_lines.append(formatted_line)
                                 # Any other lines
                                 elif line.strip():
                                     formatted_lines.append(line.strip())
@@ -649,11 +653,11 @@ else:
                             # Reconstruct with proper newlines for markdown
                             cleaned_summary = '\n'.join(formatted_lines)
                         
-                        st.markdown(f"""
-                        <div style="background-color: #F0F2F6; padding: 15px; border-radius: 10px; border-left: 5px solid {color};">
-                            {cleaned_summary}
-                        </div>
-                        """, unsafe_allow_html=True)
+                        # Add a colored line at the top for visual distinction
+                        st.markdown(f"<hr style='border: 2px solid {color}; margin: 0; padding: 0;'>", unsafe_allow_html=True)
+                        
+                        # Display as pure markdown (not wrapped in HTML)
+                        st.markdown(cleaned_summary)
                     
                     # Display price chart
                     if symbol in portfolio_data:
