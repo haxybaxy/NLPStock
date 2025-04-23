@@ -16,14 +16,12 @@ DEFAULT_MODEL = "facebook/bart-large-cnn"
 
 # Templates for stock-specific summaries
 STOCK_UP_TEMPLATE = """
-Key factors driving {symbol}'s stock price increase:
 - {point1}
 - {point2}
 - {point3}
 """
 
 STOCK_DOWN_TEMPLATE = """
-Key factors driving {symbol}'s stock price decrease:
 - {point1}
 - {point2}
 - {point3}
@@ -113,8 +111,9 @@ class LLMClient:
                 # Process the summary to make it more concise
                 result = summary[0]['summary_text'].strip()
                 
-                # Remove model prompt leakage
+                # Remove model prompt leakage and promotional content
                 result = self._remove_prompt_leakage(result, cleaned_prompt)
+                result = self._remove_promotional_content(result)
                 
                 # Remove redundant sentences that might appear in BART's output
                 result = self._clean_redundant_sentences(result)
@@ -133,6 +132,35 @@ class LLMClient:
                     logger.error(f"Failed to generate text after {max_retries} attempts")
                     return self._generate_fallback(prompt, stock_info)
     
+    def _remove_promotional_content(self, text):
+        """Remove promotional content from the generated text"""
+        # Filter out promotional sentences
+        promotional_patterns = [
+            r".*[Uu]nlock stock picks.*",
+            r".*broker[- ]level newsfeed.*",
+            r".*powers Wall Street.*",
+            r".*[Ss]ubscribe.*for more.*",
+            r".*premium content.*",
+            r".*unlock.*analysis.*",
+            r".*exclusive.*insights.*",
+            r".*register.*account.*",
+            r".*sign up.*newsletter.*"
+        ]
+        
+        sentences = re.split(r'(?<=[.!?])\s+', text)
+        filtered_sentences = []
+        
+        for sentence in sentences:
+            is_promotional = False
+            for pattern in promotional_patterns:
+                if re.match(pattern, sentence, re.DOTALL):
+                    is_promotional = True
+                    break
+            if not is_promotional:
+                filtered_sentences.append(sentence)
+        
+        return ' '.join(filtered_sentences)
+    
     def _remove_prompt_leakage(self, result, prompt):
         """Remove any parts of the prompt that leaked into the result"""
         # Check for common prompt patterns
@@ -146,7 +174,8 @@ class LLMClient:
             r"Content:",
             r"Based on the following information:",
             r"The following information indicates that",
-            r"Based on.*?information:.*?"
+            r"Based on.*?information:.*?",
+            r"List the three most important factors.*?:"
         ]
         
         cleaned_result = result
@@ -232,8 +261,8 @@ class LLMClient:
         # Ensure we have at least 3 points by repeating or generating generic ones
         points = []
         for sentence in sentences:
-            # Ensure the sentence has substance (at least 15 chars)
-            if len(sentence) > 15 and not self._is_generic_sentence(sentence):
+            # Ensure the sentence has substance (at least 15 chars) and isn't promotional
+            if len(sentence) > 15 and not self._is_generic_sentence(sentence) and not self._is_promotional(sentence):
                 # Capitalize first letter and ensure proper formatting
                 formatted_sentence = sentence[0].upper() + sentence[1:]
                 if formatted_sentence[-1] not in ['.', '!', '?']:
@@ -244,7 +273,7 @@ class LLMClient:
         if len(points) < 3 and stock_info["content"]:
             content_points = self._extract_points_from_content(stock_info["content"], stock_info["symbol"])
             for point in content_points:
-                if point not in points and len(points) < 3:
+                if point not in points and len(points) < 3 and not self._is_promotional(point):
                     points.append(point)
         
         # If still not enough points, add generic ones based on context
@@ -284,6 +313,26 @@ class LLMClient:
                 point3=points[2]
             )
     
+    def _is_promotional(self, sentence):
+        """Check if a sentence contains promotional content"""
+        promo_phrases = [
+            "unlock stock picks", 
+            "broker level", 
+            "broker-level", 
+            "newsfeed that powers", 
+            "wall street", 
+            "subscribe",
+            "premium content",
+            "register for",
+            "sign up for"
+        ]
+        
+        sentence_lower = sentence.lower()
+        for phrase in promo_phrases:
+            if phrase in sentence_lower:
+                return True
+        return False
+    
     def _is_generic_sentence(self, sentence):
         """Check if a sentence is too generic to be useful"""
         generic_patterns = [
@@ -320,7 +369,7 @@ class LLMClient:
         
         for sentence in content_sentences:
             sentence_lower = sentence.lower()
-            if any(term in sentence_lower for term in relevant_terms):
+            if any(term in sentence_lower for term in relevant_terms) and not self._is_promotional(sentence):
                 # Format the sentence properly
                 if len(sentence) > 15:
                     formatted = sentence[0].upper() + sentence[1:]
@@ -339,7 +388,7 @@ class LLMClient:
         # Check for redundancy by comparing sentence similarity
         unique_sentences = []
         for sentence in sentences:
-            if sentence and not any(self._is_similar_sentence(sentence, existing) for existing in unique_sentences):
+            if sentence and not self._is_promotional(sentence) and not any(self._is_similar_sentence(sentence, existing) for existing in unique_sentences):
                 unique_sentences.append(sentence)
         
         # Reconstruct the text
