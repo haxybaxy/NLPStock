@@ -74,7 +74,7 @@ class LLMClient:
             
         for attempt in range(max_retries):
             try:
-                # Clean and format the prompt
+                # Clean and format the prompt for the model
                 cleaned_prompt = self._clean_prompt(prompt)
                 
                 # Set the max input length based on model constraints
@@ -113,6 +113,9 @@ class LLMClient:
                 # Process the summary to make it more concise
                 result = summary[0]['summary_text'].strip()
                 
+                # Remove model prompt leakage
+                result = self._remove_prompt_leakage(result, cleaned_prompt)
+                
                 # Remove redundant sentences that might appear in BART's output
                 result = self._clean_redundant_sentences(result)
                 
@@ -129,6 +132,32 @@ class LLMClient:
                 else:
                     logger.error(f"Failed to generate text after {max_retries} attempts")
                     return self._generate_fallback(prompt, stock_info)
+    
+    def _remove_prompt_leakage(self, result, prompt):
+        """Remove any parts of the prompt that leaked into the result"""
+        # Check for common prompt patterns
+        patterns = [
+            r"Identify the key factors affecting.*?:",
+            r"Identify key factors.*?:",
+            r"Summarize the key.*?:",
+            r"Summarize key.*?:",
+            r"Company:.*?Content:",
+            r"Stock direction:.*?Content:",
+            r"Content:",
+            r"Based on the following information:",
+            r"The following information indicates that",
+            r"Based on.*?information:.*?"
+        ]
+        
+        cleaned_result = result
+        for pattern in patterns:
+            cleaned_result = re.sub(pattern, "", cleaned_result, flags=re.IGNORECASE | re.DOTALL)
+        
+        # Clean up any repeated colons or excess whitespace
+        cleaned_result = re.sub(r"\s*:\s*:", ":", cleaned_result)
+        cleaned_result = re.sub(r"\s+", " ", cleaned_result).strip()
+        
+        return cleaned_result
     
     def _extract_stock_info(self, prompt):
         """Extract stock-related information from the prompt"""
@@ -159,9 +188,9 @@ class LLMClient:
                         stock_info["symbol"] = symbol_match.group(1)
             
             # Extract direction if present
-            if "up" in prompt.lower() or "increase" in prompt.lower() or "rising" in prompt.lower():
+            if "up" in prompt.lower() or "increase" in prompt.lower() or "rising" in prompt.lower() or "positive" in prompt.lower():
                 stock_info["direction"] = "up"
-            elif "down" in prompt.lower() or "decrease" in prompt.lower() or "falling" in prompt.lower() or "decline" in prompt.lower() or "miss" in prompt.lower():
+            elif "down" in prompt.lower() or "decrease" in prompt.lower() or "falling" in prompt.lower() or "decline" in prompt.lower() or "miss" in prompt.lower() or "negative" in prompt.lower():
                 stock_info["direction"] = "down"
             else:
                 direction_match = re.search(r'moving\s+(\w+)', prompt)
@@ -203,11 +232,22 @@ class LLMClient:
         # Ensure we have at least 3 points by repeating or generating generic ones
         points = []
         for sentence in sentences:
-            # Ensure the sentence has substance (at least 20 chars)
-            if len(sentence) > 20:
-                points.append(sentence)
+            # Ensure the sentence has substance (at least 15 chars)
+            if len(sentence) > 15 and not self._is_generic_sentence(sentence):
+                # Capitalize first letter and ensure proper formatting
+                formatted_sentence = sentence[0].upper() + sentence[1:]
+                if formatted_sentence[-1] not in ['.', '!', '?']:
+                    formatted_sentence += ''
+                points.append(formatted_sentence)
         
-        # If we don't have enough points, add generic ones based on context
+        # If we don't have enough points, extract more from the content directly
+        if len(points) < 3 and stock_info["content"]:
+            content_points = self._extract_points_from_content(stock_info["content"], stock_info["symbol"])
+            for point in content_points:
+                if point not in points and len(points) < 3:
+                    points.append(point)
+        
+        # If still not enough points, add generic ones based on context
         symbol = stock_info["symbol"] if stock_info["symbol"] else "the company"
         
         generic_up_points = [
@@ -219,7 +259,7 @@ class LLMClient:
         generic_down_points = [
             f"Weaker than expected financial results from {symbol}",
             f"Negative market sentiment affecting {symbol}",
-            f"Challenging industry conditions impacting {symbol}"
+            f"Industry challenges impacting {symbol}"
         ]
         
         while len(points) < 3:
@@ -228,7 +268,7 @@ class LLMClient:
             else:
                 points.append(generic_down_points[len(points) % 3])
         
-        # Format using appropriate template
+        # Format using appropriate template - take only up to 3 most relevant points
         if stock_info["direction"] == "up":
             return STOCK_UP_TEMPLATE.format(
                 symbol=stock_info["symbol"] if stock_info["symbol"] else "the stock",
@@ -243,6 +283,52 @@ class LLMClient:
                 point2=points[1],
                 point3=points[2]
             )
+    
+    def _is_generic_sentence(self, sentence):
+        """Check if a sentence is too generic to be useful"""
+        generic_patterns = [
+            r"based on.*information",
+            r"the stock.*moving",
+            r"regarding.*stock",
+            r"this summarizes",
+            r"these factors.*stock",
+            r"these.*factors",
+            r"the stock.*affected",
+            r"the following.*factors",
+            r"key factors.*stock",
+            r"these are.*factors"
+        ]
+        
+        sentence = sentence.lower()
+        for pattern in generic_patterns:
+            if re.search(pattern, sentence):
+                return True
+        return False
+    
+    def _extract_points_from_content(self, content, symbol):
+        """Extract specific points directly from the content"""
+        points = []
+        
+        # Look for sentences containing the symbol or stock-relevant terms
+        relevant_terms = [symbol.lower(), "revenue", "earnings", "profit", "loss", 
+                         "announced", "reported", "launched", "released", 
+                         "increased", "decreased", "growth", "decline",
+                         "market", "investor", "product"]
+        
+        # Split content into sentences
+        content_sentences = [s.strip() for s in re.split(r'[.!?]', content) if s.strip()]
+        
+        for sentence in content_sentences:
+            sentence_lower = sentence.lower()
+            if any(term in sentence_lower for term in relevant_terms):
+                # Format the sentence properly
+                if len(sentence) > 15:
+                    formatted = sentence[0].upper() + sentence[1:]
+                    if formatted[-1] not in ['.', '!', '?']:
+                        formatted += ''
+                    points.append(formatted)
+        
+        return points
     
     def _clean_redundant_sentences(self, text):
         """Remove redundant sentences that might appear in the model output"""
@@ -296,15 +382,15 @@ class LLMClient:
         # For stock analysis prompts, extract the important parts
         if stock_info["is_stock_query"]:
             # Create a clear prompt for the model to understand
-            prompt_parts = []
-            if stock_info["symbol"]:
-                prompt_parts.append(f"Company: {stock_info['symbol']}")
-            if stock_info["direction"]:
-                prompt_parts.append(f"Stock direction: {stock_info['direction']}")
-            if stock_info["content"]:
-                prompt_parts.append(f"Content: {stock_info['content']}")
+            symbol_text = f"for {stock_info['symbol']}" if stock_info["symbol"] else ""
+            direction_text = f"{'positive' if stock_info['direction'] == 'up' else 'negative'}" if stock_info["direction"] else ""
+            content = stock_info["content"] if stock_info["content"] else ""
             
-            return f"Identify the key factors affecting this stock based on the following information: {' '.join(prompt_parts)}"
+            # Create a simple and direct prompt
+            if content:
+                return f"List the three most important factors affecting stock price {symbol_text} {direction_text} based on: {content}"
+            else:
+                return f"List three factors affecting stock price {symbol_text} {direction_text}"
         
         return prompt
     
@@ -322,17 +408,17 @@ class LLMClient:
             if stock_info["direction"] == "up":
                 return STOCK_UP_TEMPLATE.format(
                     symbol=symbol,
-                    point1=f"Strong financial performance and positive earnings from {symbol}",
-                    point2=f"Favorable market conditions and investor sentiment surrounding {symbol}",
-                    point3=f"Strategic initiatives and innovation driving growth for {symbol}"
+                    point1=f"Strong financial performance and positive earnings",
+                    point2=f"Favorable market conditions and investor sentiment",
+                    point3=f"Strategic initiatives and innovation driving growth"
                 )
             else:
                 return STOCK_DOWN_TEMPLATE.format(
                     symbol=symbol,
-                    point1=f"Weaker than expected financial results from {symbol}",
-                    point2=f"Negative market sentiment affecting {symbol}'s valuation",
-                    point3=f"Industry challenges and competitive pressures impacting {symbol}"
+                    point1=f"Weaker than expected financial results",
+                    point2=f"Negative market sentiment affecting valuation",
+                    point3=f"Industry challenges and competitive pressures"
                 )
             
         # Generic fallback
-        return "The information provided suggests potential implications for financial markets and stock performance, with several factors that could influence investor decisions and market movements." 
+        return "The information suggests implications for financial markets and stock performance, with several factors influencing investor decisions." 
